@@ -25,7 +25,7 @@ If you like Smint, or have suggestions on how it could be improved, send me a tw
         // adding a class to users div
         $(this).addClass('smint');
 
-
+        var off = 50;
 
         //Set the variables needed
         var optionLocs = new Array();
@@ -34,7 +34,7 @@ If you like Smint, or have suggestions on how it could be improved, send me a tw
         var $this = $(this);
         var smint = $('.smint');
         var smintA = $('.smint a');
-        var myOffset = smint.height();
+        var myOffset = smint.height() + off;
 
 
         if ( settings.scrollSpeed ) {
@@ -85,7 +85,7 @@ If you like Smint, or have suggestions on how it could be improved, send me a tw
                 var scrollTop = $(window).scrollTop()+myOffset;
 
                 // if we scroll more than the navigation, change its position to fixed and add class 'fxd', otherwise change it back to absolute and remove the class
-                if (scrollTop > stickyTop+myOffset) {
+                if (scrollTop > stickyTop+myOffset-off) {
                     smint.css({ 'position': 'fixed', 'top':0 }).addClass('fxd');
 
                     // add padding to the body to make up for the loss in heigt when the menu goes to a fixed position.
@@ -183,7 +183,7 @@ If you like Smint, or have suggestions on how it could be improved, send me a tw
 
 
             $('.intLink').on('click', function(e){
-                var myOffset = smint.height();
+                var myOffset = smint.height() - off;
 
 
                 e.preventDefault();
