@@ -25,7 +25,7 @@ If you like Smint, or have suggestions on how it could be improved, send me a tw
         // adding a class to users div
         $(this).addClass('smint');
 
-        var off = 50;
+        var off = 70;
 
         //Set the variables needed
         var optionLocs = new Array();
@@ -102,10 +102,10 @@ If you like Smint, or have suggestions on how it could be improved, send me a tw
                 if(optionLocs[index][0] <= scrollTop && scrollTop <= optionLocs[index][1]){
                     if(direction == "up"){
                         $("#"+id).addClass("active");
-                        $("#"+optionLocs[index+1][2]).removeClass("active");
+                        if(optionLocs[index+1]) $("#"+optionLocs[index+1][2]).removeClass("active");
                     } else if(index > 0) {
                         $("#"+id).addClass("active");
-                        $("#"+optionLocs[index-1][2]).removeClass("active");
+                        if(optionLocs[index-1]) $("#"+optionLocs[index-1][2]).removeClass("active");
                     } else if(direction == undefined){
                         $("#"+id).addClass("active");
                     }
@@ -116,6 +116,7 @@ If you like Smint, or have suggestions on how it could be improved, send me a tw
                         }
                     });
                 }
+
             };
 
             // run functions
@@ -135,13 +136,16 @@ If you like Smint, or have suggestions on how it could be improved, send me a tw
 
                 // Check if at bottom of page, if so, add class to last <a> as sometimes the last div
                 // isnt long enough to scroll to the top of the page and trigger the active state.
-
                 if($(window).scrollTop() + $(window).height() == $(document).height()) {
                     smintA.removeClass('active')
                     $(".smint a:not('.extLink'):last").addClass('active')
-
                 } else {
                     smintA.last().removeClass('active')
+                }
+
+                // aparent bug that last item is removed
+                if($(window).scrollTop()+myOffset >= optionLocs[optionLocs.length-1][0]) {
+                    $("#" + optionLocs[optionLocs.length-1][2]).addClass('active');
                 }
             });
 

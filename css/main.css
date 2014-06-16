@@ -28,18 +28,30 @@ body > header nav ul.menu {
   display: block;
   background-color: #3c3c3c;
   width: 100%;
-  padding: 1rem 0 0 3%;
   margin: 0;
-  height: 50px; }
+  padding: 0;
+  height: 65px; }
   body > header nav ul.menu li {
-    padding-bottom: 2rem;
     list-style: none;
+    text-align: center;
     width: 14%;
-    float: left; }
-    body > header nav ul.menu li a:hover, body > header nav ul.menu li a:active {
-      text-decoration: none; }
-    body > header nav ul.menu li a.active {
-      text-decoration: underline; }
+    float: left;
+    padding: 0; }
+    body > header nav ul.menu li:nth-child(1) > a {
+      padding-left: 10%; }
+    body > header nav ul.menu li:last-child > a {
+      padding-right: 100%; }
+    body > header nav ul.menu li a {
+      float: left;
+      width: 100%;
+      padding-top: 1rem;
+      padding-bottom: 1rem; }
+      body > header nav ul.menu li a.active {
+        background-color: #ee8073;
+        text-decoration: none;
+        color: #3c3c3c; }
+      body > header nav ul.menu li a:hover, body > header nav ul.menu li a:active {
+        text-decoration: underline; }
 
 h1, h2, h3, h4, h5 {
   text-transform: uppercase;
@@ -73,23 +85,26 @@ section {
     background-color: #22313f; }
 
 .intro {
-  font-size: 1.1rem; }
+  font-size: 1.1rem;
+  padding-top: 7rem;
+  padding-bottom: 7rem; }
   .intro header {
     font-size: 2.5rem;
     color: #ea6353;
     margin-bottom: 3rem; }
     .intro header h1 {
-      line-height: 0;
-      letter-spacing: 1rem; }
+      font-size: 2.5rem;
+      line-height: 1rem; }
     .intro header h2 {
-      font-size: 1.3rem;
-      text-transform: uppercase;
-      letter-spacing: 3px;
+      margin: 0;
+      font-size: 3rem;
+      text-transform: none;
+      letter-spacing: 2px;
       font-weight: 400; }
     .intro header p {
-      color: #888888;
+      color: #838383;
       font-style: italic;
-      font-size: 1rem; }
+      font-size: 1.4rem; }
   .intro > p {
     margin: 0.8rem 0;
     padding: 0 5%; }

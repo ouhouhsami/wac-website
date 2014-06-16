@@ -35,23 +35,59 @@ a{
 }
 
 body > header {
+ 
   nav ul.menu {
     display: block;
     background-color: darken($black, 20);
     width: 100%;
-    padding: 1rem 0 0 3%;
+    // padding: 1rem 0 0 3%;
     margin: 0;
-    height: 50px;
+    padding: 0;
+    height: 65px;
+    
     li {
-      padding-bottom: 2rem;
+      // padding-bottom: 2rem;
       list-style: none;
+      text-align: center;
       width: 14%;
       float: left;
-      
-      a{
-        &:hover, &:active{text-decoration: none;}
-        &.active{ text-decoration: underline;}
+      padding: 0;
+
+      &:nth-child(1) > a{
+        padding-left:10%;
       }
+
+      &:last-child > a{
+        padding-right:100%;
+      }
+
+      a{
+
+        float: left;
+        width: 100%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        // margin-right: 1px;
+
+        &.active{
+          // background-color: darken($main-color, 10);
+          background-color: lighten($main-color, 2);
+          text-decoration: none;
+          color: darken($black, 20);
+        }
+
+        &:hover, &:active{
+          text-decoration: underline;
+        }
+      }
+
+      // &.active{}
+
+      // a{
+      //   text-decoration: none;
+      //   &:hover, &:active{text-decoration: none;}
+      //   &.active{ text-decoration: underline;}
+      // }
     }
   }
 }
@@ -119,26 +155,34 @@ section {
 .intro{
   // padding: 50px 0 8rem 0;
   font-size: 1.1rem;
-  
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+
   header{
     font-size: 2.5rem;
     color: darken($main-color, 5);
 
     h1{
-      line-height: 0;
-      letter-spacing: 1rem;
+      font-size: 2.5rem;
+      line-height: 1rem;
+      // margin-top: 3rem;
+      // letter-spacing: 1rem;
     }
     h2{
-      font-size: 1.3rem;
-      text-transform: uppercase;
-      letter-spacing: 3px;
+      margin: 0;
+      // line-height: 2rem;
+      font-size: 3rem;
+      text-transform: none;
+      letter-spacing: 2px;
       font-weight: 400;
       // padding-bottom: 1rem;
     }
     p{
-      color: lighten($black, 10%);
+      color: lighten($black, 8%);
+      // color: lighten($main-color, 5%);
       font-style: italic;
-      font-size: 1rem;
+      font-size: 1.4rem;
+      // line-height: 1rem;
     }
 
     margin-bottom: 3rem;
