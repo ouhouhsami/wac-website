@@ -1,1167 +1,901 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
-  <style>
-  html {
-    font: 1em "Source Sans Pro";
-  }
-  table {
-    border-collapse:collapse;
-    border-color: #ccc;
-  }
-  td {
-    border-color: #ccc;
-  }
-  table tr td:nth-child(2){
-    width:40%;
-  }
-  table tr td:nth-child(1){
-    width:6%;
-  }
-  .hide {
-    display: none;
-  }
-  .day {
-    background-color: gray;
-    font-size:1.3em;
-  }
-  .half-day {
-    background-color: #DCDCDC;
-    font-size:1.1em;
-  }
-  .title:hover {
-    cursor: pointer;
-    color:#EA6353;
-  }
-  </style>
-  <script>
-  $( document ).ready(function() {
-    var $titleTd = $('.title');
-    $titleTd.next().addClass('abstract hide');
-    $titleTd.on('click', function(){
-      $(this).next().toggleClass('hide');
-    })
-  });
-  </script>
-</head>
-<body>
-  <h1>Program</h1>
-  <table border="1" >
-    <tr class="day" >
-      <td colspan=3 >
-        <b >Monday, January
-          26, 2015</b>
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <style>
+      html {
+      font: 1em "Source Sans Pro";
+      }
+      table {
+      border-collapse:collapse;
+      border-color: #ccc;
+      }
+      td {
+      border-color: #ccc;
+      }
+      table tr td:nth-child(2){
+      width:40%;
+      }
+      table tr td:nth-child(1){
+      width:6%;
+      }
+      .hide {
+      display: none;
+      }
+      .day {
+      background-color: gray;
+      font-size:1.3em;
+      }
+      .half-day {
+      background-color: #DCDCDC;
+      font-size:1.1em;
+      }
+      .title:hover {
+      cursor: pointer;
+      color:#EA6353;
+      }
+    </style>
+    <script>
+      $( document ).ready(function() {
+        var $titleTd = $('.title');
+        $titleTd.next().addClass('abstract hide');
+        $titleTd.on('click', function(){
+          $(this).next().toggleClass('hide');
+        })
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Program</h1>
+    <table border="1">
+      <tr class="day">
+        <th colspan=2>
+          Monday morning, January 26, 2015 - IRCAM - Igor Stravinsky Room
+        </th>
+      </tr>
+      <tr>
+        <td>
+          8.00
+        </td>
+        <td>
+          Welcome - Lobby
         </td>
       </tr>
-      <tr class="half-day" >
-        <td  colspan=3>
-          <b >Morning - IRCAM
-            - Igor Stravinsky Room</b>
-          </td>
-        </tr>
-        <tr >
-          <td >
-            8.00
-          </td>
-          <td  colspan=2>
-            Welcome - Lobby
-          </td>
-        </tr>
-        <tr >
-          <td >
-            9.00
-          </td>
-          <td >
-            <i >WAC Introduction</i>
-          </td>
-          <td >
-            Samuel Goldszmidt and Norbert Schnell
-          </td>
-        </tr>
-        <tr >
-          <td >
-            9.15
-          </td>
-          <td >
-            <i class="title">Keynote #1 Audio and the Web</i>
-            <div>
-              <p>
-                The web has supported multiple media since its inception - however, only
-                recently has it become a viable platform for building audio applications.
-                The talk will examine the journey of audio in the web platform, the
-                intersection of interesting technologies that make this a pivotal point for
-                audio and the web, and will highlight the opportunities unlocked by web
-                audio and where we go from here.
-              </p>
-              <p>
-                Chris Wilson is a Developer Advocate on the Google Chrome team.  He started
-                working on web browsers in 1993 when he co-authored the original Windows
-                version of NCSA Mosaic before working on Internet Explorer for fifteen
-                years at Microsoft.  He has separate and combined passions for digital
-                audio, music and the web, and co-edits the Web Audio and Web MIDI
-                specifications at the W3C.  He also specializes in playing many different
-                instruments badly.
-              </p>
-            </div>
-          </td>
-          <td >
-            Chris Wilson
-          </td>
-        </tr>
-        <tr >
-          <td >
-            10.00
-          </td>
-          <td  colspan=2>
-            Coffee Break (gallery level -2)
-          </td>
-        </tr>
-        <tr >
-          <td >
-            <b >10.30 - 13.00</b>
-          </td>
-          <td  colspan=2>
-            <b >Tools & Components</b>
-          </td>
-        </tr>
-        <tr >
-          <td >
-            10.30
-          </td>
-          <td >
-            <i class="title">Building a Collaborative Digital Audio Workstation Based on the Web
-              Audio API</i>
-            <div>
-              <p>
+      <tr>
+        <td>
+          9.00
+        </td>
+        <td>
+          <div class="title"><i>WAC Introduction</i> - Samuel Goldszmidt and Norbert Schnell</div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          9.15
+        </td>
+        <td>
+          <div class="title"><i>Keynote #1 Audio and the Web</i> - Chris Wilson</div>
+          <div>
+            <p>
+              The web has supported multiple media since its inception - however, only
+              recently has it become a viable platform for building audio applications.
+              The talk will examine the journey of audio in the web platform, the
+              intersection of interesting technologies that make this a pivotal point for
+              audio and the web, and will highlight the opportunities unlocked by web
+              audio and where we go from here.
+            </p>
+            <p>
+              Chris Wilson is a Developer Advocate on the Google Chrome team.  He started
+              working on web browsers in 1993 when he co-authored the original Windows
+              version of NCSA Mosaic before working on Internet Explorer for fifteen
+              years at Microsoft.  He has separate and combined passions for digital
+              audio, music and the web, and co-edits the Web Audio and Web MIDI
+              specifications at the W3C.  He also specializes in playing many different
+              instruments badly.
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          10.00
+        </td>
+        <td>
+          Coffee Break (gallery level -2)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <b>10.30 - 13.00</b>
+        </td>
+        <td>
+          <b>Tools & Components</b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          10.30
+        </td>
+        <td>
+          <div class="title"><i>Building a Collaborative Digital Audio Workstation Based on the Web Audio API</i> - Jan Monschke</div>
+          <div>
+            <p>
               The introduction of the Web Audio API has enriched the web landscape enormously. It gives game developers the ability to add precisely timed, high performant sound effects and to create realistic spatialized sound landscapes.
             </p>
             <p>
-For many web developers it is the first time they encounter audio programming which leads to many interesting experiments when the world of web and audio collide. Traditional web developers start to become really interested in audio programming and educate themselves on the topic of synthesizers and audio effects.</p>
-<p>
-However, currently there are only few applications that try to create more sophisticates audio production tools in the browser. In this talk I want to show how I used the Web Audio API and other emerging web standards like WebRTC to create a collaborative digital audio workstation. It allows users to record, arrange and create their own songs in collaboration with other users in real time.
-</p>
-<a href="http://web-audio-editor.herokuapp.com/">http://web-audio-editor.herokuapp.com/</a>
-
-            </div>
-            </td>
-            <td >
-              Jan Monschke
-            </td>
-          </tr>
-          <tr >
-            <td >
-              10.50
-            </td>
-            <td >
-              <i class="title">DAW Plugins for Web Browsers</i>
-              <div>
-                <p>
-                  A large collection of Digital Audio Workstation (DAW) plugins is available on the Internet in open source form. This paper explores their reuse in browser environments, focusing on hosting options that do not require manual installation. Two options based on Emscripten and PNaCl are introduced, implemented, evaluated, and released as open source. We found that ported DAW effect and sound synthesizer plugins complement and integrate with the Web Audio API, and that the existing preset patch collections make the plugins readily usable in online contexts. The latency measures are higher than in native plugin implementations, but expected to reduce with the emerging AudioWorker node.
-                </p>
-              </div>
-            </td>
-            <td >
-              Jari Kleimola
-            </td>
-          </tr>
-          <tr >
-            <td >
-              11.10
-            </td>
-            <td >
-              <i class="title">Meyda: an Audio Feature Extraction Library
-              for the Web Audio API</i>
-              <div>
-                <p>
-                  There are many existing native libraries and frameworks for audio feature extraction used in multimedia information retrieval. Many are dependent on highly optimised low level code to cope with the high performance requirements of realtime audio analysis. In this paper, we present a new audio feature extractor library, Meyda, for use with the JavaScript Web Audio API, and detail its benchmarking results. Meyda provides the first library for audio feature extraction in the web client, which will enable music information retrieval systems, complex visualisations and a wide variety of technologies and creative projects that previously were relegated to native software. The Meyda project, including source code and documentation is released under an MIT license.
-                </p>
-              </div>
-            </td>
-            <td >
-              Hugh Rawlinson, Nevo
-              Segal, and Jakub Fiala
-            </td>
-          </tr>
-          <tr >
-            <td >
-              11.30
-            </td>
-            <td >
-              <i class="title">Web Audio Tools</i>
-              <div>
-                <p>
-                  As technologies evolve and mature, proper tooling is needed to increase adoption and combat complexity. Web audio is no exception.
-                </p>
-                <p>
-An overture on the state of web audio tools, we will explore using both browser developer tools that take advantage of privileged platform code, and cross-browser drop-in libraries to provide introspection of the state of an audio context and nodes. With these tools, we’ll cover common debugging scenarios like audio graph construction, node-to-node signal transformations, signal visualizations, garbage collection, and resource consumption. These tools can help beginners understand a complex new API, save a developer’s time debugging, and help browser implementers optimize their platform.
-Attendees will leave with the knowledge of what tools are out there, workflows for inspecting, fixing, and optimizing a web audio environment, and how to make their own tools for a specific use case.
-</p>
-              </div>
-            </td>
-            <td >
-              Jordan Santell
-            </td>
-          </tr>
-          <tr >
-            <td >
-              11.50
-            </td>
-            <td >
-              <i class="title">Adventures in Scheduling, Buffers and Parameters: Porting a Dynamic
-                Audio Engine to Web Audio</i>
-              <div>
-                <p>
-                  At Sonoport, we ported our Dynamic Sound Engine from Adobe's Flash technology to Web Audio API. The difference in approaches to threading, scheduling, and parameters between Flash and Web Audio API created a few challenges for us. These differences and some peculiarities of the Web Audio API required workarounds to be able to implement our Dynamic Sound Engine in Web Audio API. In this paper we discuss three of these workarounds dealing with creating parameters, scheduling operations, and playback position of buffers, and explain how these work-arounds, although not optimal solutions, allowed us to support our use cases. Finally, we consider how the upcoming AudioWorker change in the Web Audio API specification is expected to impact these workarounds.
-                </p>
-              </div>
-              </td>
-              <td >
-                Chinmay Pendharkar, Peter Bäck, and Lonce Wyse
-              </td>
-            </tr>
-            <tr >
-              <td >
-                12.10
-              </td>
-              <td >
-                <i class="title">Audio Oriented UI Components for the Web Platform</i>
-                <div>
-                  <p>
-                    This paper presents a set of web-native tools for visualis- ing and interacting with time-based objects. These visu- alisations are rendered as part of the document using web standard technologies, allowing for an easy integration and interaction with the elements on the same document with- out the help of any non-native technologies such as Adobe Flash, Microsoft’s Silverlight or Oracle’s Java.
-                  </p>
-                </div>
-              </td>
-              <td >
-                Victor Saiz,
-                Benjamin Matuszewski, and Samuel Goldszmidt
-              </td>
-            </tr>
-            <tr >
-              <td >
-                12.30
-              </td>
-              <td >
-                <i class="title">Of Time Engines and Masters — An API for Scheduling and
-                  Synchronizing the Generation and Playback of Event Sequences and Media
-                  Streams for the Web Audio API</i>
-                <div>
-                  <p>
-                    In this article we present an API and a set of JavaScript modules for the synchronized scheduling and aligned playback of predetermined sequences of events such as notes, audio segments, and parameter changes as well as media streams (e.g. audio buffers) based on the Web Audio API logical time.
-                  </p>
-                  <p>
-The API has been designed to facilitate the development on both ends, the implementation of modules which generate event sequences or media streams as well as the integration of such modules into complex audio applications that require flexible scheduling, playback and synchronization.
-</p>
-                </div>
-                </td>
-                <td >
-                  Norbert Schnell, Victor Saiz, Karim Barkati,
-                  and Samuel Goldszmidt
-                </td>
-              </tr>
-              <tr >
-                <td >
-                  13.00
-                </td>
-                <td  colspan=2>
-                  Lunch (Gallery, Level -2)
-                </td>
-              </tr>
-              <tr class="half-day">
-                <td  colspan=3>
-                  <b >Afternoon -
-                    IRCAM - Igor Stravinsky Room</b>
-                  </td>
-                </tr>
-                <tr >
-                  <td >
-                    14.00
-                  </td>
-                  <td >
-                    <i class="title">Keynote #2 The First Computer Music Programming Language</i>
-                    <div>
-                      <p>
-                        MUSIC was a programming language developed by Max Mathews at Bell Labs in 1957. In this talk we'll learn more about Max Mathews, the origins of computer music, and by building a compiler for MUSIC in JavaScript hear what some of the very first computer music compositions sounded like.
-</p>
-<p>
-  Chris Lowis is an invited expert on the W3C's Audio Working
-group. He studied acoustics and signal processing at the Institute of Sound
-and Vibration Research in Southampton, and recently worked at the R&D
-department at the BBC.  He loves to use the Web Audio API to bring old
-synthesisers back to life, and to write about audio on the web in his
-newsletter Web Audio Weekly.
-</p>
-                    </div>
-                  </td>
-                  <td >
-                    Chris Lowis
-                  </td>
-                </tr>
-                <tr >
-                  <td >
-                    <b >14.45 - 16.15</b>
-                  </td>
-                  <td  colspan=2>
-                    <b >Languages & Environments</b>
-                  </td>
-                </tr>
-                <tr >
-                  <td >
-                    14.45
-                  </td>
-                  <td >
-                    <i class="title">Can Web Audio be Liberated from the Von
-                      Neumann Style?</i>
-                      <div>
-                        <p>
-                          The audio programming world is extremely prolific in domain-specific languages.
-Programmers and musicians prefer a custom-tailored environment where their high-level ideas can be better expressed and implemented thanks to specific domain knowledge.
-</p>
-<p>
-In particular, strongly typed functional programming has become an ideal platform for audio programming, thanks to a concise, high-level writing style, high reusability, and ability to avoid mistakes and improve error handling.
-</p>
-<ul>
-<li>How may Web Audio benefit from these ideas?</li>
-<li>How may such languages benefit from Web Audio?</li>
-</ul>
-<p>
-In this talk, we will use the functional audio programming language Faust as the reference DSL, to discuss a formal theory of interoperable and efficient audio components. Particular emphasis will be made on the use of strong, functional-style type-systems.
-</p>
-<p>
-We will address performance, security, and practical considerations, and reflect on the relationship of such theoretical framework to the actual standard.
-</p>
-                      </div>
-                    </td>
-                    <td >
-                      Emilio Jesús Gallego Arias
-                    </td>
-                  </tr>
-                  <tr >
-                    <td >
-                      15.05
-                    </td>
-                    <td >
-                      <i class="title">Extending Csound to the Web</i>
-                      <div>
-                        <p>
-                          This paper discusses the presence of the sound and music computing system Csound in the modern world-wide web browser platform. It introduces the two versions of the system currently available, as pure Javascript code, and as portable Native Client binary module with a Javascript interface. Three example applications are presented, showing some of the potential uses of the system. The paper concludes with a discussion of the wider Csound application ecosystem, and the prospects for its future development.
-                        </p>
-                      </div>
-                    </td>
-                    <td >
-                      Victor Lazzarini,
-                      Edward Costello, Steven Yi, and John Ffitch
-                    </td>
-                  </tr>
-                  <tr >
-                    <td >
-                      15.25
-                    </td>
-                    <td >
-                      <i class="title">BRAID: A Web Audio Instrument Builder with Embedded Code Blocks</i>
-                      <div>
-                        <p>
-                          Braid (Browser Audio Interface and Database) is a web audio instrument-building environment developed with the NexusUI platform. To identify the requirements of such an environment, the utility of NexusUI as an audio interface engine for web browser-based projects is reviewed. The addition of inline web audio within a drag-and-drop interface-building environment is discussed. A consideration of a modified Model-View-Controller architecture to integrate DSP code and interface is followed by an examination of the workflow of designing browser-based instruments within Braid. Finally, a database for saving and sharing web audio instruments for performance or audience distribution is described.
-                        </p>
-                      </div>
-                    </td>
-                    <td >
-                      Benjamin Taylor and Jesse Allison
-                    </td>
-                  </tr>
-                  <tr >
-                    <td >
-                      15.45
-                    </td>
-                    <td >
-                      <i class="title">Interactive Music with Tone.js</i>
-                      <div>
-                        <p>
-                        This paper discusses the features, architecture and implementation of Tone.js, a Web Audio framework to facilitate the creation of interactive music specifically suited to the affordances of the browser.
-                      </p>
-                      </div>
-                    </td>
-                    <td >
-                      Yotam Mann
-                    </td>
-                  </tr>
-                  <tr >
-                    <td >
-                      <b >16.15</b>
-                    </td>
-                    <td  colspan=2>
-                      <b >Demo / Poster Session #1 & Coffee Break (Gallery, Level -2)</b>
-                    </td>
-                  </tr>
-                  <tr >
-                    <td  rowspan=11>
-
-                    </td>
-                    <td >
-                      <i class="title">WAVE Project Demo and Enhanced Published Score - Enhanced Published
-                        Score</i>
-                      </td>
-                      <td >
-                        Benjamin Matuszewski
-                        and Samuel Goldszmidt
-                      </td>
-                    </tr>
-                    <tr >
-                      <td >
-                        <i class="title">Noteflight: A
-                        Web-standards-based Compositional Community</i>
-                        <i
-                        ><a href="http://www.noteflight.com">http://www.noteflight.com</a></i>
-                      </td>
-                      <td >
-                        Joseph Berkovitz
-                      </td>
-                    </tr>
-                    <tr >
-                      <td >
-                        <i class="title">Web-Based Visualizations and Acoustic Rendering for Multimodal Data
-                          from Orchestra Performances using Repovizz </i>
-                          <i ><a href="http://phenicx.upf.edu/">http://phenicx.upf.edu/</a></i>
-                        </td>
-                        <td >
-                          Oscar Mayor
-                        </td>
-                      </tr>
-                      <tr >
-                        <td >
-                          <i class="title">Repovizz - Multimodal Online Database and
-                          Visualization Tool </i>
-                          <i ><a href="http://repovizz.upf.edu">http://repovizz.upf.edu</a></i>
-                        </td>
-                        <td >
-                          Quim Llimona
-                        </td>
-                      </tr>
-                      <tr >
-                        <td >
-                          <i class="title">Listening Guides: Ten Year Report</i>
-                        </td>
-                        <td >
-                          Rodolphe Bailly
-                        </td>
-                      </tr>
-                      <tr >
-                        <td >
-                          <i class="title">Music-Related Media Contents Synchronized over the Web: The IEEE
-                            1599 Initiative</i>
-                            <i ><a href="http://emipiu.di.unimi.it/">http://emipiu.di.unimi.it/</a></i>
-                          </td>
-                          <td >
-                            Adriano Barat,
-                            Stefano Baldan, Davide
-                            Andrea Mauro, Goffredo Haus,
-                            and Luca Andrea Ludovico
-                          </td>
-                        </tr>
-                        <tr >
-                          <td >
-                            <i class="title">The Telemeta Platform and TimeSide Framework: Audio Archives Management and
-                              Automatic Analysis</i>
-                            </td>
-                            <td >
-                              Guillaume Pellerin
-                            </td>
-                          </tr>
-                          <tr >
-                            <td >
-                              <i class="title">Real-Time Client-Side Physical Modeling
-                                Harpsichord</i>
-                              </td>
-                              <td >
-                                Thomas Cipierre
-                              </td>
-                            </tr>
-                            <tr >
-                              <td >
-                                <i class="title">Delivering Object-Based 3D Audio using The Web Audio API</i>
-                              </td>
-                              <td >
-                                Peter Taylour
-                              </td>
-                            </tr>
-                            <tr >
-                              <td >
-                                <i class="title">Binaural Synthesis with the Web Audio API</i>
-                              </td>
-                              <td >
-                                Thibaut Carpentier
-                              </td>
-                            </tr>
-                            <tr >
-                              <td >
-                                <i class="title">Real-Time Acoustic Auralization on the Web</i>
-                                <i ><a href="http://chinpen.net/auralizr/">http://chinpen.net/auralizr/</a></i>
-                              </td>
-                              <td >
-                                Chinmay Prafulla Pendharkar
-                              </td>
-                            </tr>
-                            <tr >
-                              <td >
-                                <b >17.00 - 18.30 </b>
-                              </td>
-                              <td  colspan=2>
-                                <b >Delivering & Listening - Igor Stravinsky Room</b>
-                              </td>
-                            </tr>
-                            <tr >
-                              <td >
-                                17.00
-                              </td>
-                              <td >
-                                <i class="title">Delivering Object-Based 3D Audio using The Web Audio API and The
-                                  Audio Definition Model</i>
-                                  <div>
-                                    <p>
-                                      Presentation of an application that demonstrates object-based 3D audio rendering in the web browser using the Web Audio API. The application loads audio files containing object-based meta-data and provides head-tracked dynamic binaural rendering of the content to create an immersive 3D audio experience for headphone listeners. The user can interact with the rendering by muting individual audio objects and switching between the binaural rendering mode and conventional stereo rendering.
-The demo also includes visualisations of the object-based meta-data. Active objects are highlights on a 2D timeline visualisation and THREE.js is used to show the rendering location of each audio source in 3D space.
-</p>
-<p>
-This application demonstrates a future of broadcast sound experiences over the web, where immersive content is rendered on the client and can be adapted to listener context, as page layout is adapted to device context today with responsive design.
-</p>
-                                  </div>
-                                </td>
-                                <td >
-                                  Peter Taylour,
-                                  Chris Pike, and Frank Melchior
-                                </td>
-                              </tr>
-                              <tr >
-                                <td >
-                                  17.20
-                                </td>
-                                <td >
-                                  <i class="title">Towards the Next Generation of Web-based Experiments: A Case Study
-                                    Assessing Basic Audio Quality Following the ITU-R Recommendation BS.1534
-                                    (MUSHRA)</i>
-                                  <div>
-                                    <p>
-                                      Listening tests are widely used to assess the quality of audio systems. The majority of such listening tests are conducted in controlled environments with selected participants and professional audio equipment. In the last few years, conducting listening tests over the Internet, as so called web-based experiments, has become popular. A recent study has shown that web-based experiments lead to comparable results as laboratory experiments.
-                                    </p>
-                                    <p>
-Until now, it was only possible to implement a limited number of listening test types as web-based experiments because web standards were missing some crucial features (e.g. sample manipulation of audio streams). With the upcoming of the Web Audio API, a much wider range of listening test types can be implemented as new audio processing features have been introduced. This talk will demonstrate which new possibilities are enabled by the Web Audio API. To this end, the ITU-R Recommendation BS.1534 (MUSHRA) is taken as an example.
-</p>
-                                  </div>
-                                  </td>
-                                  <td >
-                                    Michael Schoeffler,
-                                    Fabian-Robert St&#353;ter,
-                                    Bernd Edler, and J&#376;rgen Herre
-                                  </td>
-                                </tr>
-                                <tr >
-                                  <td >
-                                    17.40
-                                  </td>
-                                  <td >
-                                    <i class="title">Spatially Distributed Sound Computing and Rendering using the Web
-                                      Audio Platform</i>
-                                    <div>
-                                      <p>
-                                        Large multi-channel spatial audio systems have historically been a playground for universities and well-funded studios, but only a dream for independent composers.
-                                      </p>
-                                      <p>
-Similarly, "parallel computers" were locked in research facilities where only a few musicians ever gained access to the computational power to convolve hundreds of separate audio streams with spatially specific room impulse responses. Mobile devices in the hands of audiences can quickly configure themselves into these kinds of systems at very affordable (and distributed) cost and little effort, making powerful and expressive spatially distributed musical platforms accessible to anyone today. We describe some software systems and artistic works that have been recently developed to explore some of the spatial audio capabilities of the mobile device browser platform.
-                                      </p>
-                                    </div>
-                                    </td>
-                                    <td >
-                                      Lonce Wyse
-                                    </td>
-                                  </tr>
-                                  <tr >
-                                    <td >
-                                      18.00
-                                    </td>
-                                    <td >
-                                      <i class="title">Personalization Support for Binaural Headphone Reproduction in Web
-                                        Browsers</i>
-                                        <div>
-                                          <p>
-                                            This study considers the issue of providing an individual listening experience for binaural sound reproduction in web browsers via headphones. The proposed solution aims at building a web framework with Web Audio API, giving support to the download of head-related transfer functions (HRTFs) associated with listener's personal profile from a server and the synchronization between the listener's devices. With each playback device and listener, the individual headphone equalization filters will be computed from headphone transfer functions (HpTFs) stored on the server. At server side, we propose to store the HRTFs and HpTFs in spatially oriented format for acoustics (SOFA). At client-side, we propose to convert the data to a new structure (WAV) ensuring a compatible solution with existing Web Audio API implementations. A binaural rendering implementation in JavaScript acting as a proof-of-concept reveals critical issues related to the native implementation in web browsers.
-                                          </p>
-                                        </div>
-                                      </td>
-                                      <td >
-                                        Michele Geronazzo,
-                                        Jari Kleimola, and Piotr Majdak
-                                      </td>
-                                    </tr>
-                                    <tr class="day">
-                                      <td  colspan=3>
-                                        <b >Tuesday,
-                                          January 27, 2015</b>
-                                        </td>
-                                      </tr>
-                                      <tr class="half-day">
-                                        <td  colspan=3>
-                                          <b >Morning - IRCAM
-                                            - Igor Stravinsky Room</b>
-                                          </td>
-                                        </tr>
-                                        <tr >
-                                          <td >
-                                            9.15
-                                          </td>
-                                          <td >
-                                            <i class="title">Keynote #3 - Web Audio API vs. Native: Closing the Gap</i>
-                                            <div>
-                                              <p>
-                                                Audio is one of the domains where developers try to get every bit of
-performance out of the device. On the other hand, the Web Audio API
-looks like an high-level API with a lot of constraints for developers.
-What does the web platform need for the Web Audio API to be competitive
-with native audio? What problems does the platform have that can be
-solved today?
-</p>
-<p>
-Paul is an audio developer at Mozilla, working on the Firefox web
-browser. He works on the Firefox Web Audio implementation, as well as
-the platform-specific audio code on all platforms, and WebRTC. He also
-co-edits the Web Audio API specification at the W3C, and is a long time
-guitar player.
-</p>
-                                            </div>
-                                          </td>
-                                          <td >
-                                            Paul Adenot
-                                          </td>
-                                        </tr>
-                                        <tr >
-                                          <td >
-                                            10.00
-                                          </td>
-                                          <td  colspan=2>
-                                            Coffee Break (Gallery, Level-2)
-                                          </td>
-                                        </tr>
-                                        <tr >
-                                          <td >
-                                            <b >10.30 - 13.00</b>
-                                          </td>
-                                          <td  colspan=2>
-                                            <b >Applications</b>
-                                          </td>
-                                        </tr>
-                                        <tr >
-                                          <td >
-                                            10.30
-                                          </td>
-                                          <td >
-                                            <i class="title">Lissajous: Performing Music with Javascript</i>
-                                            <div>
-                                              <p>Lissajous is a live coding instrument designed for use in the developer console. Its concise and functional API allows you to create dynamic sounds and rhythms in a single line of code.
-<a href="http://lissajousjs.com">http://lissajousjs.com</a>
-<a href="https://github.com/kylestetz/lissajous">https://github.com/kylestetz/lissajous</a>
-</p>
-                                            </div>
-                                          </td>
-                                          <td >
-                                            Kyle Stetz
-                                          </td>
-                                        </tr>
-                                        <tr >
-                                          <td >
-                                            10.50
-                                          </td>
-                                          <td >
-                                            <i class="title">EarSketch: Teaching Computational Music Remixing
-                                            in an Online Web Audio Based Learning Environment</i>
-                                            <div>
-                                              <p>
-                                                EarSketch is a novel approach to teaching computer-science concepts via algorithmic music composition and remixing in the context of a digital audio workstation paradigm. This project includes a Python/JavaScript coding environment, a digital audio workstation view, an audio loop browser, a social sharing site and an integrated curriculum. EarSketch is aimed at satisfying both artistic and pedagogical goals of introductory courses in computer music and computer science. This integrated platform has proven particularly effective at engaging culturally and economically diverse students in computing through music creation. EarSketch makes use of the Web Audio API as its primary audio engine for playback, effects processing and online rendering of audio data. This presentation explores the technical framework of EarSketch in greater detail and discusses the opportunities and challenges associated with using the Web Audio API to realize the project.
-                                              </p>
-                                            </div>
-                                          </td>
-                                          <td >
-                                            Anand Mahadevan, Jason
-                                            Freeman, Brian Magerko, and Juan Carlos Martinez
-                                          </td>
-                                        </tr>
-                                        <tr >
-                                          <td >
-                                            11.10
-                                          </td>
-                                          <td >
-                                            <i class="title">Hyperaudio</i>
-                                            <div>
-                                              <p>
-                                                Audio is often placed on the Internet without much thought about how it can be found, searched, shared, navigated and generally deconstructed.
-Hyperaudio weaves audio into the very fabric of the web. By transcribing the spoken parts of audio and assigning timings to each an every word we allow people to navigate, search and share in naturally and accurately manner. Uniquely Hyperaudio allows people to intuitively edit audiovisual content from its transcript.
-Editing media content with Hyperaudio is as easy as editing a text document.
-</p>
-<p>
-The Hyperaud.io service allows people to link, to transcribe and align media, and then remix it with the Hyperaudio Pad - augmenting excerpts of audio and video with effects and music.
-We're currently working with libraries and schools and using Hyperaudio to foster media literacy in a new generation.
-In order to create hyperaud.io we built an API, a series of decoupled tools and our MIT licensed JavaScript Library - Hyperaudio.js - which anyone can use to open up their audio.
-<br>
-<a href="http://hyperaud.io">http://hyperaud.io</a>
-</p>
-                                            </div>
-                                          </td>
-                                          <td >
-                                            Mark Boas
-                                          </td>
-                                        </tr>
-                                        <tr >
-                                          <td >
-                                            11.30
-                                          </td>
-                                          <td >
-                                            <i class="title">Birds of a Feather (Les Oiseaux de Mme Plumage): Dynamic Soundscapes using Real-Time
-                                              Manipulation of Locally Relevant Birdsongs</i>
-                                              <div>
-                                                <p>
-                                                  This presentation and live audio demonstration explores the capabilities of using the Web Audio API as a digital audio workstation (DAW) to manipulate sounds from massive server-side databases. Sonic source material comes from a database of birdsongs recorded worldwide by volunteer recordists at xeno-canto.org. Sounds from xeno-canto are chosen to match recent, nearby bird sightings submitted by volunteer birders at eBird. The result is a virtual soundscape derived from the sounds of birds currently present in the user’s physical environment.
-</p>
-<p>
-Our software delegates database queries and archival storage to the server, leaving the client to concentrate on the aesthetic context of sound modification and manipulation. Engineering issues include separation of client versus server concerns and mashups of crowdsourced databases. Aesthetic issues include which tasks are automated server-side, which are user-controlled client-side, and why. Social issues include single user versus multiple user paradigms, artistic soundscape composition versus commercial applications (e.g., games with evolving sound tracks) using public domain sound sources, music as foreground art versus background audio content, and the larger role of sound and music in current society. Audio results will be demonstrated as each topic is addressed.
-</p>
-<p>
-All the source code for this project is free available under the MIT License.
-</p>
-                                              </div>
-                                            </td>
-                                            <td >
-                                              Bill Walker and Brian Belet
-                                            </td>
-                                          </tr>
-                                          <tr >
-                                            <td >
-                                              11.50
-                                            </td>
-                                            <td >
-                                              <i class="title">VenueExplorer,
-                                              Object-Based Interactive Audio for Live Events</i>
-                                              <div>
-                                                <p>
-                                                  VenueExplorer is a new approach to broadcasting live events which gives more control to the audience than traditional viewing methods. Users can navigate around an ultra-high resolution video, zooming into the areas of the event which interest them and accessing extra content. VenueExplorer aims to be platform independent and runs in the browser. In this paper we describe the development of object-based audio rendering to create a more engaging and personalised experience than that of video alone. We use the Web Audio API to process audio based on the users viewport. We also describe a library that has been developed as part of this project for the handling of location based audio objects.
-                                                </p>
-                                              </div>
-                                            </td>
-                                            <td >
-                                              Matthew Paradis,
-                                              Rebecca Gregory-Clarke, and Frank Melchior
-                                            </td>
-                                          </tr>
-                                          <tr >
-                                            <td >
-                                              12.10
-                                            </td>
-                                            <td >
-                                              <i class="title">Noteflight: A
-                                              Web-standards-based Compositional Community</i>
-                                              <div>
-                                                <p>Noteflight is a web application and vibrant online community that supports the creation, sharing and playback of scores using conventional Western music notation, all taking place within a standard web browser. The site has been live for 6 years and has over 1.2 million registered users today. Of necessity, Noteflight was launched using the Adobe Flash platform, but in the last several years it has successfully transitioned to a pure Web standards environment including SVG and Web Audio.
-</p>
-<p>
-Prior to Noteflight, interactive notation editing was only available via a small number of native desktop applications. This state of affairs kept composers, arrangers and musicians from participating in the revolution in communication that has so changed human affairs in recent decades. Today, Noteflight provides a planetary-scale community for musical creation, consumption and education that is both free and standards-based.
-</p>
-<p>
-The most musically significant and innovative features of Noteflight include the notation editor and its built-in sequencer, synthesizer and mixer that use downloadable instrument samples. This talk will discuss significant implementation challenges for these components, and look at how they differ from analogous components in the native-app arena. Particular attention will be given to how being a networked, community-based application affected many design goals. Along the way, the talk will also shed light on the challenges facing Noteflight's transition from a proprietary platform (Flash) to a pure web-standards platform.
-</p>
-                                              </div>
-                                            </td>
-                                            <td >
-                                              Joseph Berkovitz
-                                            </td>
-                                          </tr>
-                                          <tr >
-                                            <td >
-                                              12.30
-                                            </td>
-                                            <td >
-                                              <i class="title">Music Performance by Discovering Community Loops</i>
-                                              <div>
-                                                <p>
-                                                Technologies for discovering sounds in large databases can help blurring the boundary between exploration and music performance. In this paper, we present a system for exploring loops from Freesound.org. Sound files are grouped by their most common repetition periods, so that they can be played in sync. A graph layout algorithm is used to organize sounds in a two-dimensional plane so that loops with similar timbre are spatially close. The result is a system that can be used as a musical instrument: since sounds will always play in sync, the user can freely explore the variety of sounds uploaded by the Freesound community, while continuously producing a rhythmic musical stream.
-                                                </p>
-                                              </div>
-                                            </td>
-                                            <td >
-                                              Gerard Roma and Xavier Serra
-                                            </td>
-                                          </tr>
-                                          <tr >
-                                            <td >
-                                              13.00
-                                            </td>
-                                            <td  colspan=2>
-                                              Buffet
-                                            </td>
-                                          </tr>
-                                          <tr >
-                                            <td class="half-day" colspan=3>
-                                              <b >Afternoon -
-                                                MOZILLA</b>
-                                              </td>
-                                            </tr>
-                                            <tr >
-                                              <td >
-                                                <b >15.00</b>
-                                              </td>
-                                              <td  colspan=2>
-                                                <b >Demo/Poster Session #2</b>
-                                              </td>
-                                            </tr>
-                                            <tr >
-                                              <td  rowspan=20>
-
-                                              </td>
-                                              <td >
-                                                <i class="title">The Collective Sound Checks Mobile Web Audio Applications</i>
-                                              </td>
-                                              <td >
-                                                Norbert Schnell
-                                              </td>
-                                            </tr>
-                                            <tr >
-                                              <td >
-                                                <i class="title">Soundworks</i><i
-                                                >
-                                                – A Playground for Artists and Developers to Create Collaborative
-                                                Mobile Web Performances</i>
-                                              </td>
-                                              <td >
-                                                Sébastien Robaszkiewicz and
-                                                Norbert Schnell
-                                              </td>
-                                            </tr>
-                                            <tr >
-                                              <td >
-                                                <i class="title">liv3c0der.com</i><i
-                                                >, a
-                                                Simplistic Live Coding Environment for the Browser</i>
-                                              </td>
-                                              <td >
-                                                Jan Krutisch
-                                              </td>
-                                            </tr>
-                                            <tr >
-                                              <td >
-                                                <i class="title">Humming Mississippi</i>
-                                              </td>
-                                              <td >
-                                                Jesse Allison
-                                              </td>
-                                            </tr>
-                                            <tr >
-                                              <td >
-                                                <i class="title">Scrolling Through Sound</i>
-                                                <i
-                                                ><a href="http://zya.github.io/scrollsound/">http://zya.github.io/scrollsound/</a></i>
-                                              </td>
-                                              <td >
-                                                Ehsan Ziya
-                                              </td>
-                                            </tr>
-                                            <tr >
-                                              <td >
-                                                <i class="title">Web Audio Synthesizer Design</i>
-                                              </td>
-                                              <td >
-                                                Luke Teaford
-                                              </td>
-                                            </tr>
-                                            <tr >
-                                              <td >
-                                                <i class="title">Two Online N-gon Wave Synthesisers</i>
-                                              </td>
-                                              <td >
-                                                Dominik Chapman
-                                              </td>
-                                            </tr>
-                                            <tr >
-                                              <td >
-                                                <i class="title">LFO Low Frequency Operators on Streams</i>
-                                              </td>
-                                              <td >
-                                                Victor Saiz
-                                              </td>
-                                            </tr>
-                                            <tr >
-                                              <td >
-                                                <i class="title">Visualizing Audio with p5.js</i>
-                                              </td>
-                                              <td >
-                                                Jason Sigal
-                                              </td>
-                                            </tr>
-                                            <tr >
-                                              <td >
-                                                <i class="title">Quint.js: A JavaScript Library for Teaching Music Technology to Fine
-                                                  Arts Students</i>
-                                                  <i ><a href="http://quinta.audio/Quint">http://quinta.audio/Quint</a></i>
-                                                </td>
-                                                <td >
-                                                  Ian George Burleigh
-                                                  and Thilo Schaller
-                                                </td>
-                                              </tr>
-                                              <tr >
-                                                <td >
-                                                  <i class="title">A Dynamic Audio Experience Creation Platform in Web Audio</i>
-                                                  <i ><a href="http://wac.sonoport.com/">http://wac.sonoport.com/</a></i>
-                                                </td>
-                                                <td >
-                                                  Chinmay Pendharkar, Peter
-                                                  Bäck, and Lonce Wyse
-
-                                                </td>
-                                              </tr>
-                                              <tr >
-                                                <td >
-                                                  <i class="title">Websocket</i><i > Server for Max</i>
-                                                </td>
-                                                <td >
-                                                  Oliver Larkin
-                                                </td>
-                                              </tr>
-                                              <tr >
-                                                <td >
-                                                  <i class="title">Streaming Live Content to Web Audio API</i>
-                                                </td>
-                                                <td >
-                                                  Raphaël Goldwaser and
-                                                  Emmanuel Fréard
-                                                </td>
-                                              </tr>
-                                              <tr >
-                                                <td >
-                                                  <i class="title">VenueExplorer</i><i
-                                                  > (Demo)
-                                                  Object-Based Interactive Audio for Live Events</i>
-                                                </td>
-                                                <td >
-                                                  Matthew Paradis
-
-                                                </td>
-                                              </tr>
-                                              <tr >
-                                                <td >
-                                                  <i class="title">MT5: a HTML5 Multitrack Player for
-                                                    Musicians</i>
-                                                  </td>
-                                                  <td >
-                                                    Michel Buffa,
-                                                    Amine Hallili and Philippe Renevier
-                                                  </td>
-                                                </tr>
-                                                <tr >
-                                                  <td >
-                                                    <i class="title">Adaptive, Personalised "In Browser" Audio Compression </i>
-                                                  </td>
-                                                  <td >
-                                                    Matthew Paradis
-                                                    and Andrew Mason
-                                                  </td>
-                                                </tr>
-                                                <tr >
-                                                  <td >
-                                                    <i class="title">Seismokraft</i><i
-                                                    > </i>
-                                                  </td>
-                                                  <td >
-                                                    Ethan Geller
-                                                  </td>
-                                                </tr>
-                                                <tr >
-                                                  <td >
-                                                    <i class="title">SimScene: a Web-based Acoustic Scenes Simulator</i>
-                                                  </td>
-                                                  <td >
-                                                    Mathias Rossignol,
-                                                    Gregoire Lafay, Mathieu
-                                                    Lagrange, and Nicolas Misdariis
-                                                  </td>
-                                                </tr>
-                                                <tr >
-                                                  <td >
-                                                    <i class="title">Querying Freesound with a Microphone</i>
-                                                  </td>
-                                                  <td >
-                                                    Gerard Roma and Xavier Serra
-                                                  </td>
-                                                </tr>
-                                                <tr >
-                                                  <td >
-                                                    <i class="title">Composing a Web of Audio Applications</i>
-                                                  </td>
-                                                  <td >
-                                                    Sarah Denoux,
-                                                    Yann Orlarey, Stephane Letz, and Dominique Fober
-                                                  </td>
-                                                </tr>
-                                                <tr >
-                                                  <td >
-                                                    <b >17.00 </b>
-                                                  </td>
-                                                  <td  colspan=2>
-                                                    <b >Web Audio Gigs #1</b>
-                                                  </td>
-                                                </tr>
-                                                <tr >
-                                                  <td  rowspan=2>
-
-                                                  </td>
-                                                  <td >
-                                                    <i class="title">The Tomb of the Grammarian Lysias</i>
-                                                  </td>
-                                                  <td >
-                                                    Ben Houge
-                                                  </td>
-                                                </tr>
-                                                <tr >
-                                                  <td >
-                                                    <i class="title">Traversal</i>
-                                                  </td>
-                                                  <td >
-                                                    Jesse Allison
-                                                  </td>
-                                                </tr>
-                                                <tr >
-                                                  <td >
-                                                    18.00
-                                                  </td>
-                                                  <td  colspan=2>
-                                                    Happy Hour
-                                                  </td>
-                                                </tr>
-                                                <tr >
-                                                  <td >
-                                                    <b >19.00</b>
-                                                  </td>
-                                                  <td  colspan=2>
-                                                    <b >Web Audio Gigs #2</b>
-                                                  </td>
-                                                </tr>
-                                                <tr >
-                                                  <td  rowspan=2>
-
-                                                  </td>
-                                                  <td >
-                                                    <i class="title">Drops</i>
-                                                  </td>
-                                                  <td >
-                                                    Sébastien Robaszkiewicz and
-                                                    Norbert Schnell
-                                                  </td>
-                                                </tr>
-                                                <tr >
-                                                  <td >
-                                                    <i class="title">Smartphone Jam Session with Audience</i>
-                                                  </td>
-                                                  <td >
-                                                    Toshihiro Kita
-                                                  </td>
-                                                </tr>
-                                                <tr >
-                                                  <td >
-                                                    20.00
-                                                  </td>
-                                                  <td  colspan=2>
-                                                    Buffet
-                                                  </td>
-                                                </tr>
-                                                <tr >
-                                                  <td >
-                                                    <b >21.00</b>
-                                                  </td>
-                                                  <td  colspan=2>
-                                                    <b >Web Audio Gigs #3</b>
-                                                  </td>
-                                                </tr>
-                                                <tr >
-                                                  <td  rowspan=2>
-
-                                                  </td>
-                                                  <td >
-                                                    <i class="title">Pearl River</i>
-                                                  </td>
-                                                  <td >
-                                                    Benjamin Taylor
-                                                  </td>
-                                                </tr>
-                                                <tr >
-                                                  <td >
-                                                    <i class="title">Fields #2</i>
-                                                  </td>
-                                                  <td >
-                                                    Sébastien Piquemal and Tim
-                                                    Shaw
-                                                  </td>
-                                                </tr>
-                                                <tr >
-                                                  <td class="day" colspan=3>
-                                                    <b >Wednesday,
-                                                      January 28, 2015</b>
-                                                    </td>
-                                                  </tr>
-                                                  <tr class="half-day" >
-                                                    <td  colspan=3>
-                                                      <b >Morning - IRCAM
-                                                        - Igor Stravinsky Room</b>
-                                                      </td>
-                                                    </tr>
-                                                    <tr >
-                                                      <td >
-                                                        9.30
-                                                      </td>
-                                                      <td  colspan=2>
-                                                        Coffee
-                                                      </td>
-                                                    </tr>
-                                                    <tr >
-                                                      <td >
-                                                        10.00
-                                                      </td>
-                                                      <td >
-                                                        <i class="title">W3C Audio Working Group Plenary Session</i>
-                                                        <div>
-                                                          <p>
-                                                          With Matthew Paradis (Chair), Joe Berkovitz (Chair), Chris Lowis (Invited Expert), Paul Adenot (Editor/Implementor), Chris Lilley (W3C Staff Representative)
-                                                        </p>
-                                                        <p>
-A number of members of the W3C Web Audio Group will be present at the WAC conference. The Audio Working Group will give a short presentation on how the process works from the W3C perspective and will highlight some of the areas that the Web audio community could help in the effort to move the API to a W3C recommendation. The Audio Working Group will then present some of the more complex issues that it deals with for discussion and take questions and suggestions from attendees.
-</p>
-                                                        </div>
-                                                      </td>
-                                                      <td >
-                                                        Matthew Paradis,
-                                                        Joe Berkovitz, Chris Lowis,
-                                                        Paul Adenot, and Chris Lilley
-                                                      </td>
-                                                    </tr>
-                                                    <tr >
-                                                      <td >
-                                                        12.00
-                                                      </td>
-                                                      <td  colspan=2>
-                                                        Free Time
-                                                      </td>
-                                                    </tr>
-                                                    <tr class="half-day" >
-                                                      <td  colspan=3>
-                                                        <b >Afternoon -
-                                                          MOZILLA</b>
-                                                        </td>
-                                                      </tr>
-                                                      <tr >
-                                                        <td >
-                                                          14.00 - 18.30
-                                                        </td>
-                                                        <td  colspan=2>
-                                                          Experiments, Hacks, Informal
-                                                          Presentations, and Discussions
-                                                        </td>
-                                                      </tr>
-                                                    </table>
-                                                  </body>
-                                                  </html>
+              For many web developers it is the first time they encounter audio programming which leads to many interesting experiments when the world of web and audio collide. Traditional web developers start to become really interested in audio programming and educate themselves on the topic of synthesizers and audio effects.
+            </p>
+            <p>
+              However, currently there are only few applications that try to create more sophisticates audio production tools in the browser. In this talk I want to show how I used the Web Audio API and other emerging web standards like WebRTC to create a collaborative digital audio workstation. It allows users to record, arrange and create their own songs in collaboration with other users in real time.
+            </p>
+            <a href="http://web-audio-editor.herokuapp.com/">http://web-audio-editor.herokuapp.com/</a>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          10.50
+        </td>
+        <td>
+          <div class="title"><i>DAW Plugins for Web Browsers</i> - Jari Kleimola</div>
+          <div>
+            <p>
+              A large collection of Digital Audio Workstation (DAW) plugins is available on the Internet in open source form. This paper explores their reuse in browser environments, focusing on hosting options that do not require manual installation. Two options based on Emscripten and PNaCl are introduced, implemented, evaluated, and released as open source. We found that ported DAW effect and sound synthesizer plugins complement and integrate with the Web Audio API, and that the existing preset patch collections make the plugins readily usable in online contexts. The latency measures are higher than in native plugin implementations, but expected to reduce with the emerging AudioWorker node.
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          11.10
+        </td>
+        <td>
+          <div class="title"><i>Meyda: an Audio Feature Extraction Library for the Web Audio API</i> - Hugh Rawlinson, Nevo
+          Segal, and Jakub Fiala</div>
+          <div>
+            <p>
+              There are many existing native libraries and frameworks for audio feature extraction used in multimedia information retrieval. Many are dependent on highly optimised low level code to cope with the high performance requirements of realtime audio analysis. In this paper, we present a new audio feature extractor library, Meyda, for use with the JavaScript Web Audio API, and detail its benchmarking results. Meyda provides the first library for audio feature extraction in the web client, which will enable music information retrieval systems, complex visualisations and a wide variety of technologies and creative projects that previously were relegated to native software. The Meyda project, including source code and documentation is released under an MIT license.
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          11.30
+        </td>
+        <td>
+          <div class="title"><i>Web Audio Tools</i> - Jordan Santell</div>
+          <div>
+            <p>
+              As technologies evolve and mature, proper tooling is needed to increase adoption and combat complexity. Web audio is no exception.
+            </p>
+            <p>
+              An overture on the state of web audio tools, we will explore using both browser developer tools that take advantage of privileged platform code, and cross-browser drop-in libraries to provide introspection of the state of an audio context and nodes. With these tools, we’ll cover common debugging scenarios like audio graph construction, node-to-node signal transformations, signal visualizations, garbage collection, and resource consumption. These tools can help beginners understand a complex new API, save a developer’s time debugging, and help browser implementers optimize their platform.
+              Attendees will leave with the knowledge of what tools are out there, workflows for inspecting, fixing, and optimizing a web audio environment, and how to make their own tools for a specific use case.
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          11.50
+        </td>
+        <td>
+          <div class="title"><i>Adventures in Scheduling, Buffers and Parameters: Porting a Dynamic Audio Engine to Web Audio</i> - Chinmay Pendharkar, Peter Bäck, and Lonce Wyse</div>
+          <div>
+            <p>
+              At Sonoport, we ported our Dynamic Sound Engine from Adobe's Flash technology to Web Audio API. The difference in approaches to threading, scheduling, and parameters between Flash and Web Audio API created a few challenges for us. These differences and some peculiarities of the Web Audio API required workarounds to be able to implement our Dynamic Sound Engine in Web Audio API. In this paper we discuss three of these workarounds dealing with creating parameters, scheduling operations, and playback position of buffers, and explain how these work-arounds, although not optimal solutions, allowed us to support our use cases. Finally, we consider how the upcoming AudioWorker change in the Web Audio API specification is expected to impact these workarounds.
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          12.10
+        </td>
+        <td>
+          <div class="title"><i>Audio Oriented UI Components for the Web Platform</i> - Victor Saiz,
+          Benjamin Matuszewski, and Samuel Goldszmidt</div>
+          <div>
+            <p>
+              This paper presents a set of web-native tools for visualis- ing and interacting with time-based objects. These visu- alisations are rendered as part of the document using web standard technologies, allowing for an easy integration and interaction with the elements on the same document with- out the help of any non-native technologies such as Adobe Flash, Microsoft’s Silverlight or Oracle’s Java.
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          12.30
+        </td>
+        <td>
+          <div class="title"><i>Of Time Engines and Masters — An API for Scheduling and Synchronizing the Generation and Playback of Event Sequences and Media Streams for the Web Audio API</i> - Norbert Schnell, Victor Saiz, Karim Barkati,
+          and Samuel Goldszmidt</div>
+          <div>
+            <p>
+              In this article we present an API and a set of JavaScript modules for the synchronized scheduling and aligned playback of predetermined sequences of events such as notes, audio segments, and parameter changes as well as media streams (e.g. audio buffers) based on the Web Audio API logical time.
+            </p>
+            <p>
+              The API has been designed to facilitate the development on both ends, the implementation of modules which generate event sequences or media streams as well as the integration of such modules into complex audio applications that require flexible scheduling, playback and synchronization.
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          13.00
+        </td>
+        <td>
+          Lunch (Gallery, Level -2)
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <tr class="day">
+        <th colspan=2>
+          Monday afternoon, January 26, 2015 - IRCAM - Igor Stravinsky Room
+        </th>
+      </tr>
+      <tr>
+        <td>
+          14.00
+        </td>
+        <td>
+          <div class="title"><i>Keynote #2 The First Computer Music Programming Language</i> - Chris Lowis</div>
+          <div>
+            <p>
+              MUSIC was a programming language developed by Max Mathews at Bell Labs in 1957. In this talk we'll learn more about Max Mathews, the origins of computer music, and by building a compiler for MUSIC in JavaScript hear what some of the very first computer music compositions sounded like.
+            </p>
+            <p>
+              Chris Lowis is an invited expert on the W3C's Audio Working
+              group. He studied acoustics and signal processing at the Institute of Sound
+              and Vibration Research in Southampton, and recently worked at the R&D
+              department at the BBC.  He loves to use the Web Audio API to bring old
+              synthesisers back to life, and to write about audio on the web in his
+              newsletter Web Audio Weekly.
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <b>14.45 - 16.15</b>
+        </td>
+        <td>
+          <b>Languages & Environments</b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          14.45
+        </td>
+        <td>
+          <div class="title"><i>Can Web Audio be Liberated from the Von Neumann Style?</i> - Emilio Jesús Gallego Arias</div>
+          <div>
+            <p>
+              The audio programming world is extremely prolific in domain-specific languages.
+              Programmers and musicians prefer a custom-tailored environment where their high-level ideas can be better expressed and implemented thanks to specific domain knowledge.
+            </p>
+            <p>
+              In particular, strongly typed functional programming has become an ideal platform for audio programming, thanks to a concise, high-level writing style, high reusability, and ability to avoid mistakes and improve error handling.
+            </p>
+            <ul>
+              <li>How may Web Audio benefit from these ideas?</li>
+              <li>How may such languages benefit from Web Audio?</li>
+            </ul>
+            <p>
+              In this talk, we will use the functional audio programming language Faust as the reference DSL, to discuss a formal theory of interoperable and efficient audio components. Particular emphasis will be made on the use of strong, functional-style type-systems.
+            </p>
+            <p>
+              We will address performance, security, and practical considerations, and reflect on the relationship of such theoretical framework to the actual standard.
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          15.05
+        </td>
+        <td>
+          <div class="title"><i>Extending Csound to the Web</i> - Victor Lazzarini,
+          Edward Costello, Steven Yi, and John Ffitch</div>
+          <div>
+            <p>
+              This paper discusses the presence of the sound and music computing system Csound in the modern world-wide web browser platform. It introduces the two versions of the system currently available, as pure Javascript code, and as portable Native Client binary module with a Javascript interface. Three example applications are presented, showing some of the potential uses of the system. The paper concludes with a discussion of the wider Csound application ecosystem, and the prospects for its future development.
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          15.25
+        </td>
+        <td>
+          <div class="title"><i>BRAID: A Web Audio Instrument Builder with Embedded Code Blocks</i> - Benjamin Taylor and Jesse Allison</div>
+          <div>
+            <p>
+              Braid (Browser Audio Interface and Database) is a web audio instrument-building environment developed with the NexusUI platform. To identify the requirements of such an environment, the utility of NexusUI as an audio interface engine for web browser-based projects is reviewed. The addition of inline web audio within a drag-and-drop interface-building environment is discussed. A consideration of a modified Model-View-Controller architecture to integrate DSP code and interface is followed by an examination of the workflow of designing browser-based instruments within Braid. Finally, a database for saving and sharing web audio instruments for performance or audience distribution is described.
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          15.45
+        </td>
+        <td>
+          <div class="title"><i>Interactive Music with Tone.js</i> - Yotam Mann</div>
+          <div>
+            <p>
+              This paper discusses the features, architecture and implementation of Tone.js, a Web Audio framework to facilitate the creation of interactive music specifically suited to the affordances of the browser.
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <b>16.15</b>
+        </td>
+        <td colspan=2>
+          <b>Demo / Poster Session #1 & Coffee Break (Gallery, Level -2)</b>
+        </td>
+      </tr>
+      <tr>
+        <td rowspan=11>
+        </td>
+        <td>
+          <div class="title"><i>WAVE Project Demo and Enhanced Published Score - Enhanced Published Score</i> -  Benjamin Matuszewski
+          and Samuel Goldszmidt</div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="title"><i>Noteflight: A Web-standards-based Compositional Community</i> - Joseph Berkovitz</div>
+          <i
+            ><a href="http://www.noteflight.com">http://www.noteflight.com</a></i>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="title"><i>Web-Based Visualizations and Acoustic Rendering for Multimodal Data from Orchestra Performances using Repovizz </i> - Oscar Mayor</div>
+          <i><a href="http://phenicx.upf.edu/">http://phenicx.upf.edu/</a></i>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="title"><i>Repovizz - Multimodal Online Database and Visualization Tool</i> - Quim Llimona</div>
+          <i><a href="http://repovizz.upf.edu">http://repovizz.upf.edu</a></i>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="title"><i>Listening Guides: Ten Year Report</i> - Rodolphe Bailly</div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="title"><i>Music-Related Media Contents Synchronized over the Web: The IEEE 1599 Initiative</i> - Adriano Barat, Stefano Baldan, Davide Andrea Mauro, Goffredo Haus, and Luca Andrea Ludovico</div>
+          <i><a href="http://emipiu.di.unimi.it/">http://emipiu.di.unimi.it/</a></i>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="title"><i>The Telemeta Platform and TimeSide Framework: Audio Archives Management and Automatic Analysis</i> - Guillaume Pellerin</div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="title"><i>Real-Time Client-Side Physical Modeling Harpsichord</i> - Thomas Cipierre</div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="title"><i>Delivering Object-Based 3D Audio using The Web Audio API</i> - Peter Taylour</div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="title"><i>Binaural Synthesis with the Web Audio API</i> - Thibaut Carpentier</div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="title"><i>Real-Time Acoustic Auralization on the Web</i> - Chinmay Prafulla Pendharkar</div>
+          <i><a href="http://chinpen.net/auralizr/">http://chinpen.net/auralizr/</a></i>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <b>17.00 - 18.30</b>
+        </td>
+        <td colspan=2>
+          <b>Delivering & Listening - Igor Stravinsky Room</b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          17.00
+        </td>
+        <td>
+          <div class="title"><i>Delivering Object-Based 3D Audio using The Web Audio API and The Audio Definition Model</i> - Peter Taylour, Chris Pike, and Frank Melchior</div>
+          <div>
+            <p>
+              Presentation of an application that demonstrates object-based 3D audio rendering in the web browser using the Web Audio API. The application loads audio files containing object-based meta-data and provides head-tracked dynamic binaural rendering of the content to create an immersive 3D audio experience for headphone listeners. The user can interact with the rendering by muting individual audio objects and switching between the binaural rendering mode and conventional stereo rendering.
+              The demo also includes visualisations of the object-based meta-data. Active objects are highlights on a 2D timeline visualisation and THREE.js is used to show the rendering location of each audio source in 3D space.
+            </p>
+            <p>
+              This application demonstrates a future of broadcast sound experiences over the web, where immersive content is rendered on the client and can be adapted to listener context, as page layout is adapted to device context today with responsive design.
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          17.20
+        </td>
+        <td>
+          <div class="title"><i>Towards the Next Generation of Web-based Experiments: A Case Study Assessing Basic Audio Quality Following the ITU-R Recommendation BS.1534 (MUSHRA)</i> - Michael Schoeffler, Fabian-Robert St&#353;ter, Bernd Edler, and J&#376;rgen Herre</div>
+          <div>
+            <p>
+              Listening tests are widely used to assess the quality of audio systems. The majority of such listening tests are conducted in controlled environments with selected participants and professional audio equipment. In the last few years, conducting listening tests over the Internet, as so called web-based experiments, has become popular. A recent study has shown that web-based experiments lead to comparable results as laboratory experiments.
+            </p>
+            <p>
+              Until now, it was only possible to implement a limited number of listening test types as web-based experiments because web standards were missing some crucial features (e.g. sample manipulation of audio streams). With the upcoming of the Web Audio API, a much wider range of listening test types can be implemented as new audio processing features have been introduced. This talk will demonstrate which new possibilities are enabled by the Web Audio API. To this end, the ITU-R Recommendation BS.1534 (MUSHRA) is taken as an example.
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          17.40
+        </td>
+        <td>
+          <div class="title"><i>Spatially Distributed Sound Computing and Rendering using the Web Audio Platform</i> - Lonce Wyse</div>
+          <div>
+            <p>
+              Large multi-channel spatial audio systems have historically been a playground for universities and well-funded studios, but only a dream for independent composers.
+            </p>
+            <p>
+              Similarly, "parallel computers" were locked in research facilities where only a few musicians ever gained access to the computational power to convolve hundreds of separate audio streams with spatially specific room impulse responses. Mobile devices in the hands of audiences can quickly configure themselves into these kinds of systems at very affordable (and distributed) cost and little effort, making powerful and expressive spatially distributed musical platforms accessible to anyone today. We describe some software systems and artistic works that have been recently developed to explore some of the spatial audio capabilities of the mobile device browser platform.
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          18.00
+        </td>
+        <td>
+          <div class="title"><i>Personalization Support for Binaural Headphone Reproduction in Web Browsers</i> - Michele Geronazzo, Jari Kleimola, and Piotr Majdak</div>
+          <div>
+            <p>
+              This study considers the issue of providing an individual listening experience for binaural sound reproduction in web browsers via headphones. The proposed solution aims at building a web framework with Web Audio API, giving support to the download of head-related transfer functions (HRTFs) associated with listener's personal profile from a server and the synchronization between the listener's devices. With each playback device and listener, the individual headphone equalization filters will be computed from headphone transfer functions (HpTFs) stored on the server. At server side, we propose to store the HRTFs and HpTFs in spatially oriented format for acoustics (SOFA). At client-side, we propose to convert the data to a new structure (WAV) ensuring a compatible solution with existing Web Audio API implementations. A binaural rendering implementation in JavaScript acting as a proof-of-concept reveals critical issues related to the native implementation in web browsers.
+            </p>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <tr class="day">
+        <th colspan=2>Tuesday morning, January 27, 2015 - IRCAM - Igor Stravinsky Room</th>
+      </tr>
+      <tr>
+        <td>
+          9.15
+        </td>
+        <td>
+          <div class="title"><i>Keynote #3 - Web Audio API vs. Native: Closing the Gap</i> - Paul Adenot</div>
+          <div>
+            <p>
+              Audio is one of the domains where developers try to get every bit of
+              performance out of the device. On the other hand, the Web Audio API
+              looks like an high-level API with a lot of constraints for developers.
+              What does the web platform need for the Web Audio API to be competitive
+              with native audio? What problems does the platform have that can be
+              solved today?
+            </p>
+            <p>
+              Paul is an audio developer at Mozilla, working on the Firefox web
+              browser. He works on the Firefox Web Audio implementation, as well as
+              the platform-specific audio code on all platforms, and WebRTC. He also
+              co-edits the Web Audio API specification at the W3C, and is a long time
+              guitar player.
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          10.00
+        </td>
+        <td>
+          Coffee Break (Gallery, Level-2)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <b>10.30 - 13.00</b>
+        </td>
+        <td>
+          <b>Applications</b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          10.30
+        </td>
+        <td>
+          <div class="title"><i>Lissajous: Performing Music with Javascript</i> - Kyle Stetz</div>
+          <div>
+            <p>Lissajous is a live coding instrument designed for use in the developer console. Its concise and functional API allows you to create dynamic sounds and rhythms in a single line of code.
+              <a href="http://lissajousjs.com">http://lissajousjs.com</a>
+              <a href="https://github.com/kylestetz/lissajous">https://github.com/kylestetz/lissajous</a>
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          10.50
+        </td>
+        <td>
+          <div class="title"><i>EarSketch: Teaching Computational Music Remixing in an Online Web Audio Based Learning Environment</i> - Anand Mahadevan, Jason Freeman, Brian Magerko, and Juan Carlos Martinez</div>
+          <div>
+            <p>
+              EarSketch is a novel approach to teaching computer-science concepts via algorithmic music composition and remixing in the context of a digital audio workstation paradigm. This project includes a Python/JavaScript coding environment, a digital audio workstation view, an audio loop browser, a social sharing site and an integrated curriculum. EarSketch is aimed at satisfying both artistic and pedagogical goals of introductory courses in computer music and computer science. This integrated platform has proven particularly effective at engaging culturally and economically diverse students in computing through music creation. EarSketch makes use of the Web Audio API as its primary audio engine for playback, effects processing and online rendering of audio data. This presentation explores the technical framework of EarSketch in greater detail and discusses the opportunities and challenges associated with using the Web Audio API to realize the project.
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          11.10
+        </td>
+        <td>
+          <div class="title"><i>Hyperaudio</i> - Mark Boas</div>
+          <div>
+            <p>
+              Audio is often placed on the Internet without much thought about how it can be found, searched, shared, navigated and generally deconstructed.
+              Hyperaudio weaves audio into the very fabric of the web. By transcribing the spoken parts of audio and assigning timings to each an every word we allow people to navigate, search and share in naturally and accurately manner. Uniquely Hyperaudio allows people to intuitively edit audiovisual content from its transcript.
+              Editing media content with Hyperaudio is as easy as editing a text document.
+            </p>
+            <p>
+              The Hyperaud.io service allows people to link, to transcribe and align media, and then remix it with the Hyperaudio Pad - augmenting excerpts of audio and video with effects and music.
+              We're currently working with libraries and schools and using Hyperaudio to foster media literacy in a new generation.
+              In order to create hyperaud.io we built an API, a series of decoupled tools and our MIT licensed JavaScript Library - Hyperaudio.js - which anyone can use to open up their audio.
+              <br>
+              <a href="http://hyperaud.io">http://hyperaud.io</a>
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          11.30
+        </td>
+        <td>
+          <div class="title"><i>Birds of a Feather (Les Oiseaux de Mme Plumage): Dynamic Soundscapes using Real-Time Manipulation of Locally Relevant Birdsongs</i> - Bill Walker and Brian Belet</div>
+          <div>
+            <p>
+              This presentation and live audio demonstration explores the capabilities of using the Web Audio API as a digital audio workstation (DAW) to manipulate sounds from massive server-side databases. Sonic source material comes from a database of birdsongs recorded worldwide by volunteer recordists at xeno-canto.org. Sounds from xeno-canto are chosen to match recent, nearby bird sightings submitted by volunteer birders at eBird. The result is a virtual soundscape derived from the sounds of birds currently present in the user’s physical environment.
+            </p>
+            <p>
+              Our software delegates database queries and archival storage to the server, leaving the client to concentrate on the aesthetic context of sound modification and manipulation. Engineering issues include separation of client versus server concerns and mashups of crowdsourced databases. Aesthetic issues include which tasks are automated server-side, which are user-controlled client-side, and why. Social issues include single user versus multiple user paradigms, artistic soundscape composition versus commercial applications (e.g., games with evolving sound tracks) using public domain sound sources, music as foreground art versus background audio content, and the larger role of sound and music in current society. Audio results will be demonstrated as each topic is addressed.
+            </p>
+            <p>
+              All the source code for this project is free available under the MIT License.
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          11.50
+        </td>
+        <td>
+          <div class="title"><i>VenueExplorer, Object-Based Interactive Audio for Live Events</i> - Matthew Paradis, Rebecca Gregory-Clarke, and Frank Melchior</div>
+          <div>
+            <p>
+              VenueExplorer is a new approach to broadcasting live events which gives more control to the audience than traditional viewing methods. Users can navigate around an ultra-high resolution video, zooming into the areas of the event which interest them and accessing extra content. VenueExplorer aims to be platform independent and runs in the browser. In this paper we describe the development of object-based audio rendering to create a more engaging and personalised experience than that of video alone. We use the Web Audio API to process audio based on the users viewport. We also describe a library that has been developed as part of this project for the handling of location based audio objects.
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          12.10
+        </td>
+        <td>
+          <div class="title"><i>Noteflight: A Web-standards-based Compositional Community</i> - Joseph Berkovitz</div>
+          <div>
+            <p>Noteflight is a web application and vibrant online community that supports the creation, sharing and playback of scores using conventional Western music notation, all taking place within a standard web browser. The site has been live for 6 years and has over 1.2 million registered users today. Of necessity, Noteflight was launched using the Adobe Flash platform, but in the last several years it has successfully transitioned to a pure Web standards environment including SVG and Web Audio.</p>
+            <p>
+              Prior to Noteflight, interactive notation editing was only available via a small number of native desktop applications. This state of affairs kept composers, arrangers and musicians from participating in the revolution in communication that has so changed human affairs in recent decades. Today, Noteflight provides a planetary-scale community for musical creation, consumption and education that is both free and standards-based.
+            </p>
+            <p>
+              The most musically significant and innovative features of Noteflight include the notation editor and its built-in sequencer, synthesizer and mixer that use downloadable instrument samples. This talk will discuss significant implementation challenges for these components, and look at how they differ from analogous components in the native-app arena. Particular attention will be given to how being a networked, community-based application affected many design goals. Along the way, the talk will also shed light on the challenges facing Noteflight's transition from a proprietary platform (Flash) to a pure web-standards platform.
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          12.30
+        </td>
+        <td>
+          <div class="title"><i>Music Performance by Discovering Community Loops</i> - Gerard Roma and Xavier Serra</div>
+          <div>
+            <p>
+              Technologies for discovering sounds in large databases can help blurring the boundary between exploration and music performance. In this paper, we present a system for exploring loops from Freesound.org. Sound files are grouped by their most common repetition periods, so that they can be played in sync. A graph layout algorithm is used to organize sounds in a two-dimensional plane so that loops with similar timbre are spatially close. The result is a system that can be used as a musical instrument: since sounds will always play in sync, the user can freely explore the variety of sounds uploaded by the Freesound community, while continuously producing a rhythmic musical stream.
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          13.00
+        </td>
+        <td>
+          Buffet
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <tr class="day" >
+        <th colspan=2>
+          Tuesday afternoon, January 27, 2015 - MOZILLA
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <b>15.00</b>
+        </td>
+        <td colspan=2>
+          <b>Demo/Poster Session #2</b>
+        </td>
+      </tr>
+      <tr>
+        <td rowspan=20>
+        </td>
+        <td>
+          <div class="title"><i>The Collective Sound Checks Mobile Web Audio Applications</i> - Norbert Schnell</div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="title"><i>Soundworks – A Playground for Artists and Developers to Create Collaborative Mobile Web Performances</i> - Sébastien Robaszkiewicz and Norbert Schnell</div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="title"><i>liv3c0der.com, a Simplistic Live Coding Environment for the Browser</i> - Jan Krutisch</div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="title"><i>Humming Mississippi</i> - Jesse Allison</div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="title"><i>Scrolling Through Sound</i> - Ehsan Ziya</div>
+          <i
+            ><a href="http://zya.github.io/scrollsound/">http://zya.github.io/scrollsound/</a></i>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="title"><i>Web Audio Synthesizer Design</i> - Luke Teaford</div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="title"><i>Two Online N-gon Wave Synthesisers</i> - Dominik Chapman</div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="title"><i>LFO Low Frequency Operators on Streams</i> - Victor Saiz</div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="title"><i>Visualizing Audio with p5.js</i> - Jason Sigal</div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="title"><i>Quint.js: A JavaScript Library for Teaching Music Technology to Fine Arts Students</i> - Ian George Burleigh and Thilo Schaller</div>
+          <i><a href="http://quinta.audio/Quint">http://quinta.audio/Quint</a></i>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="title"><i>A Dynamic Audio Experience Creation Platform in Web Audio</i> - Chinmay Pendharkar, Peter Bäck, and Lonce Wyse</div>
+          <i><a href="http://wac.sonoport.com/">http://wac.sonoport.com/</a></i>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="title"><i>Websocket Server for Max</i> - Oliver Larkin</div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="title"><i>Streaming Live Content to Web Audio API</i> - Raphaël Goldwaser and Emmanuel Fréard</div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="title"><i>VenueExplorer (Demo) Object-Based Interactive Audio for Live Events</i> - Matthew Paradis</div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="title"><i>MT5: a HTML5 Multitrack Player for Musicians</i> - Michel Buffa, Amine Hallili and Philippe Renevier</div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="title"><i>Adaptive, Personalised "In Browser" Audio Compression </i> - Matthew Paradis and Andrew Mason</div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="title"><i>Seismokraft</i> - Ethan Geller</div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="title"><i>SimScene: a Web-based Acoustic Scenes Simulator</i> - Mathias Rossignol, Gregoire Lafay, Mathieu Lagrange, and Nicolas Misdariis</div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="title"><i>Querying Freesound with a Microphone</i> - Gerard Roma and Xavier Serra</div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="title"><i>Composing a Web of Audio Applications</i> - Sarah Denoux, Yann Orlarey, Stephane Letz, and Dominique Fober</div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <b>17.00 </b>
+        </td>
+        <td>
+          <b>Web Audio Gigs #1</b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+        </td>
+        <td>
+          <div class="title"><i>The Tomb of the Grammarian Lysias</i> - Ben Houge</div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+        </td>
+        <td>
+          <div class="title"><i>Traversal</i> - Jesse Allison</div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          18.00
+        </td>
+        <td colspan=2>
+          Happy Hour
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <b>19.00</b>
+        </td>
+        <td>
+          <b>Web Audio Gigs #2</b>
+        </td>
+      </tr>
+      <tr>
+        <td rowspan=2>
+        </td>
+        <td>
+          <div class="title"><i>Drops</i> - Sébastien Robaszkiewicz and Norbert Schnell</div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="title"><i>Smartphone Jam Session with Audience</i> - Toshihiro Kita</div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          20.00
+        </td>
+        <td>
+          Buffet
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <b>21.00</b>
+        </td>
+        <td>
+          <b>Web Audio Gigs #3</b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+        </td>
+        <td>
+          <div class="title"><i>Pearl River</i> - Benjamin Taylor</div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+        </td>
+        <td>
+          <div class="title"><i>Fields #2</i> - Sébastien Piquemal and Tim Shaw</div>
+        </td>
+      </tr>
+      </table>
+    <table border="1">
+      <tr class="day">
+        <th colspan=3 >
+         Wednesday morning, January 28, 2015 - IRCAM - Igor Stravinsky room
+        </th>
+      </tr>
+      <tr>
+        <td>
+          9.30
+        </td>
+        <td>
+          Coffee
+        </td>
+      </tr>
+      <tr>
+        <td>
+          10.00
+        </td>
+        <td>
+          <div class="title"><i>W3C Audio Working Group Plenary Session</i> - Matthew Paradis, Joe Berkovitz, Chris Lowis, Paul Adenot, and Chris Lilley</div>
+          <div>
+            <p>
+              With Matthew Paradis (Chair), Joe Berkovitz (Chair), Chris Lowis (Invited Expert), Paul Adenot (Editor/Implementor), Chris Lilley (W3C Staff Representative)
+            </p>
+            <p>
+              A number of members of the W3C Web Audio Group will be present at the WAC conference. The Audio Working Group will give a short presentation on how the process works from the W3C perspective and will highlight some of the areas that the Web audio community could help in the effort to move the API to a W3C recommendation. The Audio Working Group will then present some of the more complex issues that it deals with for discussion and take questions and suggestions from attendees.
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          12.00
+        </td>
+        <td>
+          Free Time
+        </td>
+      </tr>
+</table>
+    <table border="1">
+      <tr class="day">
+        <th colspan=2>
+         Wednesday afternoon, January 28, 2015 - Mozilla
+        </th>
+      </tr>
+      <tr>
+        <td>
+          14.00 - 18.30
+        </td>
+        <td>
+          Experiments, Hacks, Informal
+          Presentations, and Discussions
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
