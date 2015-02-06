@@ -459,21 +459,101 @@
       <tr>
         <td class="no-border"></td>
         <td>
-          <div><i>Web-Based Visualizations and Acoustic Rendering for Multimodal Data from Orchestra Performances using Repovizz </i> - Oscar Mayor</div>
-          <i><a href="http://phenicx.upf.edu/">http://phenicx.upf.edu/</a></i>
+          <div class="title"><i>Web-Based Visualizations and Acoustic Rendering for Multimodal Data from Orchestra Performances using Repovizz </i> - Oscar Mayor</div>
+          <div>
+            In the demo a set of fully working web-based prototypes developed in the
+context of the EU FP7 PHENICX Project (http://phenicx.upf.edu) will be
+presented. The Phenicx project is about innovating the classical music
+experience providing them with a multimodal, multi-perspective and
+multilayer interactive engagement, before, during and after the concert.
+In this demo we present some prototypes that are related with the post
+concert experience.
+<br />
+We have recorded a set of classical pieces performed by top level
+orchestras, including some data modalities like multi-channel audio,
+video, motion capture sensors, midi and text. Once all data streams have
+been time-synchronized, we have performed the following analysis on the
+data:
+<br />
+- Low-level and high-level audio descriptors for each individual audio
+source<br />
+- Description of conductor gestures based on the motion capture sensors
+- Score to performance alignment<br />
+- Audio source separation<br />
+- Musical structure analysis of the performed piece
+<br />
+Then all these data is uploaded to the repovizz web repository
+(repovizz.upf.edu) that allows visualization and sharing of the data
+over the network. A set of customized web-based visualizations have been
+designed to build the prototypes that will be shown in this demo.
+Multimodal data streams are accessed on-line using the repovizz web API
+and html5 is used for the visualizations of the multimodal data and
+descriptors extracted from the performances. The web-audio API is used
+to handle the audio rendering in the client to mix between the different
+audio channels obtained from the different recorded audio sources or
+from the automatic isolation of instruments performed in the analysis step.
+<br />
+The visualizations available include (all web-based):
+- Scrolling piano roll visualization of the musical score while audio is
+playing
+- Orchestra layout visualization showing instrument activity and
+loudness while playing audio<br />
+- Audio focus to hear individual instruments playing alone<br />
+- Multi-perspective video angle selection during the concert<br />
+- 3D render of the conductor body
+<br />
+Here is a live example of the orchestra layout visualization including
+the isolation of instruments as an example of one of the prototypes that
+will be shown during the demo:
+http://repovizz.upf.edu/phenicx/RCO-Eroica/
+<br />
+Video showing some of the repovizz orchestra visualizations developed in
+the context of PHENICX:
+https://www.youtube.com/watch?v=c7pmDvkKY7A#t=168
+          </div>
         </td>
       </tr>
       <tr>
         <td class="no-border"></td>
         <td>
-          <div><i>Repovizz - Multimodal Online Database and Visualization Tool</i> - Quim Llimona</div>
-          <i><a href="http://repovizz.upf.edu">http://repovizz.upf.edu</a></i>
+          <div><i>Repovizz - Multimodal Online Database and Visualization Tool</i> - Quim Llimona, Oscar Mayor, Esteban Maestre, Panos Papiotis
+</div>
+          <div>
+        Repovizz is an integrated online system capable of structural formatting and remote storage, browsing, exchange, annotation, and visualization of
+synchronous multi-modal, time-aligned data. Motivated by a growing need
+for data-driven collaborative research, repovizz aims to resolve
+commonly encountered difficulties in sharing or browsing large
+collections of multi-modal data. At its current state, repovizz is
+designed to hold time-aligned streams of heterogeneous data: audio,
+video, motion capture, physiological signals, extracted descriptors,
+annotations, et cetera. Most popular formats for audio and video are
+supported, while CSV-based formats are adopted for streams other than
+audio or video (e.g., motion capture or physiological signals). The data
+itself is structured via customized XML files, allowing the user to
+(re-) organize multi-modal data in any hierarchical manner, as the XML
+structure only holds metadata and pointers to data files. Datasets are
+stored in an online database, allowing the user to interact with the
+data remotely through a powerful HTML5 visual interface accessible from
+any standard web browser; this feature can be considered a key aspect of
+repovizz since data can be explored, annotated, or visualized from any
+location or device. Data exchange and upload/download is made easy and
+secure via a number of data conversion tools and a user/permission
+management system. Furthermore, the system allows real-time
+collaboration by means of "shared sessions", where changes in the
+visualization are synchronized across multiple users as if they were all
+on the same machine.
+</div>
         </td>
       </tr>
       <tr>
         <td class="no-border"></td>
         <td>
-          <div><i>Listening Guides: Ten Year Report</i> - Rodolphe Bailly</div>
+          <div class="title"><i>Listening Guides: Ten Year Report</i> - Rodolphe Bailly</div>
+          <div>
+            This demo is a 10 year report of the production of online Listening Guides by the Cité de la musique and their use inside and outside the institution.
+            <br />
+            The purpose of the Listening Guides is to explain the language of Music in clear and simple terms, using an online synchronization tool between Music, Text, scores and annotations.
+          </div>
         </td>
       </tr>
       <tr>
@@ -486,13 +566,76 @@
       <tr>
         <td class="no-border"></td>
         <td>
-          <div><i>The Telemeta Platform and TimeSide Framework: Audio Archives Management and Automatic Analysis</i> - Guillaume Pellerin</div>
+          <div class="title"><i>The Telemeta Platform and TimeSide Framework: Audio Archives Management and Automatic Analysis</i> - Guillaume Pellerin</div>
+          <div>
+The Telemeta platform and TimeSide framework: Audio archives management
+and Automatic analysis.
+<br />
+Telemeta is an open-source web audio platform for the management and
+access to digital sound archives and audio metadata. It is developed by
+the Parisson company and other open source developers since 2007.
+<br />
+Telemeta focuses on the enhanced and collaborative user-experience in
+accessing audio items and their associated metadata and on the
+possibility for the expert users to further enrich those metadata though
+hierarchical and structured fields, thesaurus and ontologies.
+<br />
+This platform has been deployed since 2011 in the context of
+ethnomusicological archives and hold the archives of the Center for
+Research in Ethnomusicology, which is the most important ethnic music
+collection in Europe. The platform is fully operational and is now used
+on a daily basis by researchers, teachers and archivists in the fields
+of ethnomusicology, anthropology, linguistics and acoustics.
+<br />
+The Telemeta audio engine relies on TimeSide, an open audio processing
+framework written in Python and JavaScript.
+<br />
+Not only TimeSide provides Telemeta with audio decoding, encoding and
+streaming methods but with a set of on-the-fly signal analysis methods
+as well.
+<br />
+Given these low and high level signal analysis capabilities, various
+audio signal representations can be computed and incorporated in the
+embedded HTML audio player.
+By additionally wrapping several audio features extraction
+libraries,various automatic annotation, segmentation and musicological
+analysis can be performed over the audio archives and metadata.
+<br />
+The TimeSide engine architecture is composed of several modules and
+makes it easy to develop and add new plugins.
+Through collaboration with academic research labs in computer science,
+speech processing and music information retrieval, new automatic
+analysis functionalities are brought to the platform regularly.
+<br />
+As component of a fully functional but continuously evolving web
+platform, the development of both Telemeta and TimeSide is secured with
+unitary testing process.
+<br />
+The Telemeta and TimeSide platform are available as open-source projects
+at the following addresses:
+<br />
+https://github.com/yomguy/Telemeta<br />
+https://github.com/yomguy/TimeSide
+          </div>
         </td>
       </tr>
       <tr>
         <td class="no-border"></td>
         <td>
-          <div><i>Real-Time Client-Side Physical Modeling Harpsichord</i> - Thomas Cipierre</div>
+          <div class="title"><i>Real-Time Client-Side Physical Modeling Harpsichord</i> - Thomas Cipierre / Laurent Pottier (CIEREC – EA3068)</div>
+
+<div>
+As part of the ANR Blanc Project FEEVER <http://www.agence-nationale-recherche.fr/projet-anr/?tx_lwmsuivibilan_pi2%5BCODE%5D=ANR-13-BS02-0008> (ANR-13-BS02-0008, 10/2013, 42 months), the CIEREC <http://portail.univ-st-etienne.fr/bienvenue/recherche/centre-interdisciplinaire-d-etudes-et-de-recherches-sur-l-expression-contemporaine-27653.kjsp> (Saint-Étienne - France) was asked by the Museum of Art and Industry of Saint-Étienne <http://www.musee-art-industrie.saint-etienne.fr/> to implement a real-time synthesized harpsichord for a special exhibition <http://www.musee-art-industrie.saint-etienne.fr/decouvrir/collections/clavecin-du-musee>.
+<br />
+A standalone version was created by Laurent Pottier and Luc Faure, all DSP edited in FAUST <http://faust.grame.fr/> in a physical modeling approach, with a Max/MSP <https://cycling74.com/> GUI (DSP based on Julius Smith and Romain Michon previous works on the Faust-STK <http://faust.grame.fr/index.php/related-projects/faust-stk>). Our second goal was then to provide a client-side real-time harpsichord on the web, in order to share a convenient musical researching and/or production tool, as much as an educational support to anyone, even with no prior computational and/or musical knowledge.
+<br />
+The idea was thus to implement a polyphonic Javascript version of our model, thanks to the faust2asmjs script (which consists of compiling our FAUST DSP in an optimized polyphonic asm.js <http://asmjs.org/> version), create instances, use regular Web Audio API nodes, and control DSP parameters through a responsive user-friendly GUI in Polymer <https://www.polymer-project.org/>. Some issues were of course to face, from trying to optimize the amount of computing resources needed by the physical modeling approach (especially for near zero amplitude data), to trying to be the more "web-standard" we could concerning the GUI, despite the unbalanced implementations of W3C requirements through the mainly used web browsers (Web Audio API, Web MIDI API, Web Components).
+<br />
+You will find our still evolving web harpsichord version here : http://musinf.univ-st-etienne.fr/recherches/ClavecinHtml/web-harpsichord.html
+<http://musinf.univ-st-etienne.fr/recherches/ClavecinHtml/harpsi.html>.
+<br />
+You will also find a quick video demonstration of our first stand-alone version (FAUST DSP - Max/MSP GUI) here : http://feever.fr/videos.
+</div>
         </td>
       </tr>
       <tr>
@@ -510,8 +653,31 @@
       <tr>
         <td class="no-border"></td>
         <td>
-          <div><i>Real-Time Acoustic Auralization on the Web</i> - Chinmay Prafulla Pendharkar</div>
-          <i><a href="http://chinpen.net/auralizr/">http://chinpen.net/auralizr/</a></i>
+          <div class="title"><i>Real-Time Acoustic Auralization on the Web</i> - Chinmay Prafulla Pendharkar</div>
+          <div>
+          Auralization is the technique user for creation and reproduction of
+spatially distributed sound based on mathematical models. In recent
+times auralization is gaining interest in the field of Room Acoustics as
+an effective way to hear how proposed spaces or rooms would distribute
+sonic events. Auralization using real-time sound sources takes this
+virtual reality one step further by processing the users voice and
+reproducing it to give a sense of envelopment similar to the space being
+modeled.
+<br />
+Traditionally most tools for creating these mathematical models, their
+outputs in form of impulse responses, or the tools for experiencing
+auralization are native apps. Web Audio enables parts of the usecases
+for real-time auralization by allowing user audio inputs and fast native
+convolution using the ConvolverNode. Earlier this year, I created a demo
+of this concept called Auralizr, based on a methodology derived and
+implemented in PureData by my Acoustician colleague Josefin Lindebrink.
+https://github.com/notthetup/auralizr
+<br />
+In this talk I'll explain how real-time auralization works on the Web
+and especially Mobile Web. I will also discuss some performance in terms
+of latency and how things can be improved. I will talk about some use
+case ideas and also some future plans we have with this project.
+</div>
         </td>
       </tr>
       <tr>
@@ -764,7 +930,36 @@
       <tr>
         <td class="no-border"></td>
         <td>
-          <div><i>The Collective Sound Checks Mobile Web Audio Applications</i> - Norbert Schnell</div>
+          <div class="title"><i>The Collective Sound Checks Mobile Web Audio Applications</i> - Norbert Schnell</div>
+          <div>
+          We demonstrate a set of Web Audio API based prototype applications that
+have been developed to explore scenarios of collective performance with
+sound and music in the context of the CoSiMa project
+(http://cosima.ircam.fr/).<br />
+The applications feature various synthesis techniques implemented with
+the Web Audio API that are controlled through the embedded sensors and
+touch screen of mobile devices (i.e. smartphones).
+Since the applications focus on motion-based control, their graphical
+user interfaces are limited to a few buttons to select different options.
+<br />
+We have tested different performance scenarios based on these
+applications in a series of workshops – the ”Collective Sound Checks” –
+in collaboration with the Studio 13/16 at the Centre Pompidou in Paris.
+Three workshops were held in May and June 2014, and four further ones
+between October and December 2014.
+<br />
+We have published some of the applications which only require a simple
+HTTP server at http://cosima.ircam.fr/checks/.
+The other applications provide an infrastructure to the performers that
+relies on a node.js server and thus require a local server and WiFi
+network for the demonstration.
+<br />
+More information about the applications – including videos showing their
+functioning – can be found on the CoSiMa web page at
+- http://cosima.ircam.fr/2014/07/15/cosc-web-applications<br />
+- http://cosima.ircam.fr/2014/07/15/cosc-shaker/<br />
+- http://cosima.ircam.fr/2014/07/15/cosc-wwryr/
+</div>
         </td>
       </tr>
       <tr>
@@ -796,19 +991,54 @@
       <tr>
         <td class="no-border"></td>
         <td>
-          <div><i>Two Online N-gon Wave Synthesisers</i> - Dominik Chapman</div>
+          <div class="title"><i>Two Online N-gon Wave Synthesisers</i> - Dominik Chapman</div>
+          <div>
+N-gon wave synthesis and especially n-gon wave scales are relatively unknown to the public. The approach to this synthesis and composition is partially inspired from experimental approaches to drawn graphical / ornamental sound, that include methods that came to prominence in Russia and Germany in the first part of the 20th century. Two online synthesisers (current link: http://igor.ac.uk/~mu102dc/ngonwaves/start.html) were developed at Goldsmiths University of London as introductory tools to the subject of geometric waveforms. The online real-time interaction tools are a means to explore the audio-visual relations of the geometry of waveforms that are derived from regular polygons and regular star polygons and allow to experiment with a theoretically infinite number of geometric waveforms and scales. The poster presents a short introduction to n-gon wave synthesis, the two n-gon wave synthesisers and a critical evaluation of the n-gon wave algorithm implementation using the Web Audio API and the HTML canvas element.
+</div>
         </td>
       </tr>
       <tr>
         <td class="no-border"></td>
         <td>
-          <div><i>LFO Low Frequency Operators on Streams</i> - Victor Saiz</div>
+          <div class="title"><i>LFO Low Frequency Operators on Streams</i> - Victor Saiz</div>
+          <div>
+LFO is an API that aims to formalise the processing and analysis of
+arbitrary data streams (audio, video, sensor data etc.) . By normalising
+the stream format in it's input and output ends we will be able to
+manipulate and analyse the data through a processing chain and
+encapsulate common processing algorithms with a unified interface that
+can be shared and reused.
+<br />
+For such goal we will explore javascript possibilities from browser APIs
+such as workers to node's server-side streaming capabilities.
+<br />
+We will then present LFO as an architecture pattern for control signal
+processing (eg. parameter control of an audio node via LFO signals) and
+signal analysis and automatic description (onset detection, automatic
+description and segmentation etc.)
+          </div>
         </td>
       </tr>
       <tr>
         <td class="no-border"></td>
         <td>
-          <div><i>Visualizing Audio with p5.js</i> - Jason Sigal</div>
+          <div class="title"><i>Visualizing Audio with p5.js</i> - Jason Sigal</div>
+<div>
+p5.js is a new JavaScript library from the Processing Foundation. It begins
+with the original goal of Processing—to make programming accessible for
+artists, designers, educators and novices—and re-imagines this mission for
+the web. p5.js also has addon libraries that make it easy to interact with
+other HTML5 objects, including text, input, video, webcam, and sound.
+<br />
+This demo showcases p5's methodologies for welcoming creative coders of all
+stripes to the exciting world of Web Audio. The core sound library is
+p5.sound. It is designed to be accessible to those with no code or sound
+background, while also fostering the creativity of more advanced users. In
+addition, p5 welcomes contributed addon libraries. For example, p5.gibber
+is a wrapper for the audio portion of the Gibber coding environment,
+created by Charlie Roberts. More information at p5js.org/libraries.
+</div>
+
         </td>
       </tr>
       <tr>
@@ -828,7 +1058,11 @@
       <tr>
         <td class="no-border"></td>
         <td>
-          <div><i>Websocket Server for Max</i> - Oliver Larkin</div>
+          <div class="title"><i>Websocket Server for Max</i> - Oliver Larkin</div>
+<div>
+This demo introduces ol.wsserver, an open source Max external that uses HTML5 WebSockets to provide a simple solution for multi-client interaction with a Max patch. The external embeds the Civetweb web server and allows the server side Max patch to send and receive data to/from individual WebSocket clients via Max messages. It is primarily designed for WLAN based performances and sound installations involving mobile phones and tablets, although it should also work over the internet. The use of standard HTTP ports and an embedded server reduces the complexity of setup when compared to alternatives such as dedicated OSC controller apps.
+
+</div>
         </td>
       </tr>
       <tr>
@@ -840,7 +1074,17 @@
       <tr>
         <td class="no-border"></td>
         <td>
-          <div><i>VenueExplorer (Demo) Object-Based Interactive Audio for Live Events</i> - Matthew Paradis</div>
+          <div class="title"><i>VenueExplorer (Demo) Object-Based Interactive Audio for Live Events</i> - Matthew Paradis</div>
+<div>
+VenueExplorer is a new approach to broadcasting live events which gives
+more control to the audience than traditional viewing methods. Users can
+navigate around an ultra-high resolution video, zooming into the areas
+of the event which interest them and accessing extra content.
+VenueExplorer aims to be platform independent and runs in the browser.
+We use the Web Audio API to process audio based on the users viewport.
+This allows relevant audio to be presented according to the event that
+the user is watching.
+</div>
         </td>
       </tr>
       <tr>
@@ -858,7 +1102,14 @@
       <tr>
         <td class="no-border"></td>
         <td>
-          <div><i>Seismokraft</i> - Ethan Geller</div>
+          <div class="title"><i>Seismokraft</i> - Ethan Geller</div>
+<div>
+          Seismokraft (developed with Elizabeth Davis) is a web application that
+pulls time series data from recent seismic events and allows the user to
+manipulate the resulting audio signal using the webAudio API. The
+ultimate goal is to allow users to compare and contrast properties of
+different seismic events. http://seismokraft.com
+</div>
         </td>
       </tr>
       <tr>
@@ -890,7 +1141,10 @@
       <tr>
         <td class="no-border"></td>
         <td>
-          <div><i>The Tomb of the Grammarian Lysias</i> - Ben Houge</div>
+          <div class="title"><i>The Tomb of the Grammarian Lysias</i> - Ben Houge</div>
+          <div>
+Before his death in 1933, Constantine P. Cavafy was a poet on the fringe, living on the outskirts of the Greek diaspora in Alexandria, writing in a modernist style that was far from the mainstream of his time, and marginalized for his homosexuality.  In this poem, he describes the tomb of the fictional scholar Lysias, and the stochastic shuffling of the electronic accompaniment, distributed throughout the audience, reflects the way we explore space and acquire knowledge, eyes falling where they may, moving from one subject to the next.  We might peruse the stacks of a library the same way, and Cavafy’s oeuvre is notable for finding unexpected correspondences between the annals of Hellenistic history and our own time.  This setting is in just intonation, which connects Cavafy to another prominent Greek from Alexandria, Ptolemy, who first theorized a musical system based on small number frequency ratios.  In its non-tempered tunings, phrasings, and drone-based textures, the music evokes Greek Orthodox chant, and its generative musical processes, which could continue indefinitely, create a somber space for reflection, fitting for a memorial.
+          </div>
         </td>
       </tr>
       <tr>
@@ -972,7 +1226,10 @@ to be used will be put at <a href="http://tkita.net/csound/wac2014/">http://tkit
       <tr>
         <td class="no-border"></td>
         <td>
-          <div><i>Pearl River</i> - Benjamin Taylor</div>
+          <div class="title"><i>Pearl River</i> (2013/2015) - Benjamin Taylor</div>
+          <div>
+Pearl River is a distributed audio work in which many participants act as parts of a single instrument. In 2013, 10-20 networked laptop performers performed the first iteration of the piece, in which each performer controls one sine tone in a spectrum, and the ensemble organizes chords via a chat window and networked visual interface. For the Web Audio Conference 2015, Pearl River has been adapted to take advantage of a larger audience of participants (50+) on mobile phones. Several musical interfaces have been added to the original and are distributed to the audience. As new interfaces are sent to the audience, participants act as parts of a collective piano, parts of a collective granular synth, and parts of an overtone spectrum.
+          </div>
         </td>
       </tr>
       <tr>
