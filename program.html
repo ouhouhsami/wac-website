@@ -1007,7 +1007,43 @@ Humming Mississippi is a sonic sculpture by Derick Ostrenko and Jesse Allison th
       <tr>
         <td class="no-border"></td>
         <td>
-          <div><i>Web Audio Synthesizer Design</i> - Luke Teaford</div>
+          <div class="title"><i>Web Audio Synthesizer Design</i> - Luke Teaford</div>
+          <div>
+            Designing a Web Audio synthesizer challenges the developer to find creative
+uses of the API and to use web standards to create a graphical interface. I
+built TANGUY (http://tanguysynth.com) to generate complex timbres, to appeal to people unaccustomed
+to synthesizers, and to learn JavaScript in the process of developing it.
+<br />
+I drew inspiration from various analog synthesizers, and in particular the
+ARP 2600. Renowned synths have distinctive characteristics which make them
+identifiable to synth geeks: peculiar filters, unusual features, and
+colorful imperfections. To achieve this in Web Audio, I used many more
+nodes than one might expect from looking at TANGUY’s panel. As with
+hardware synths, the complex routing is hidden from the user so as not to
+overwhelm with choice. Certain decisions (like subtle detuning and an
+audio-range LFO rate) are made for the user.
+<br />
+Having a variety of ways to interact with a synth (knobs, sliders, keys,
+and switches) makes it more fun. The ARP 2600 is, perhaps, a strange thing
+to admire for its UI, but sliders make it easy to tell at a glance how the
+sound is sculpted. Sliders are trivial to implement: I used HTML 5 range
+inputs and CSS gradients to create the demarcations.
+<br />
+TANGUY’s presets are JSON objects. The relevant values are stored and
+retrieved as the user interacts with the interface. Loading new programs
+updates the panel elements to the correct positions so that the sound can
+be modified slightly by the user. This is not how patch loading works on
+hardware synthesizers—the controls aren’t motorized, so touching anything
+can change the sound drastically. This is frustrating to people who are
+learning synthesis. TANGUY gives novice synth programmers a helping hand.
+<br />
+I have three goals for TANGUY. I hope it is useful in educational contexts
+so users can experiment with sound. I want musicians to enjoy playing it as
+an instrument. I want to showcase the usefulness and expressivity of the
+Web Audio API. TANGUY is named for the surrealist painter Yves Tanguy. If
+the user finds any relationship between my humble synthesizer and Tanguy’s
+otherworldly landscapes, I have succeeded.
+          </div>
         </td>
       </tr>
       <tr>
